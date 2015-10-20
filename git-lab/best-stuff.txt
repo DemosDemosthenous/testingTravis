@@ -1,6 +1,5 @@
 The best film of 2015 is: 
 The best TV series is: Game of Thrones
-<<<<<<< HEAD
 The best actress/actor is: Robert Downey Jr (ofc)
 The best type of phone is: Sony
 The worst band in the world is: The sound of a man farting-hahaha ;p
@@ -9,14 +8,3 @@ The best module from the 1st year is: Discrete Structures 4 ever
 The best album of all time is: 
 The best colour is: purple
 The best activity is: 
-=======
-The best actress/actor is: Robert Downey Jr
-The best type of phone is: iPhone
-The worst band in the world is: The sound of a man farting
-The best band of all time is: Metallica!
-The best module from the 1st year is: Discrete Structures
-The best album of all time is: Day & Age - The Killers
-The best colour is: Blue
-The best activity is: Sleeping
-
->>>>>>> 0c4aa0dbfbe803c3db2e9088fa5e2711833fa379
