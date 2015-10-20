@@ -1,4 +1,4 @@
-The best film of 2015 is: 
+
 The best TV series is: Game of Thrones
 The best actress/actor is: Robert Downey Jr (ofc)(!)
 The best type of phone is: Sony Experia
@@ -7,5 +7,5 @@ The best band of all time is: Children of bodom
 The best module from the 1st year is: Discrete Structures 4 ever OKAY
 The best album of all time is: Follow the reaper
 The best colour is: Black	
-The best activity is: sex 
+ 
 
