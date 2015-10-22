@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2015-10-10" view-index="0" gantt-divider-location="400" resource-divider-location="300" version="2.7.1" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2015-10-19" view-index="0" gantt-divider-location="400" resource-divider-location="300" version="2.7.1" locale="en_GB">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
+    <view zooming-state="default:0" id="gantt-chart">
         <field id="tpd3" name="Name" width="54" order="0"/>
         <field id="tpd4" name="Begin date" width="22" order="1"/>
         <field id="tpd5" name="End date" width="22" order="2"/>
@@ -34,7 +34,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="1" name="Task 1 - Create A Gantt Chart" color="#8cb6ce" meeting="false" start="2015-10-19" duration="14" complete="7" expand="true">
+        <task id="1" name="Task 1 - Create A Gantt Chart" color="#8cb6ce" meeting="false" start="2015-10-19" duration="14" complete="7" expand="false">
             <task id="3" name="Ask Commit hours from people" color="#8cb6ce" meeting="false" start="2015-10-19" duration="1" complete="100" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
@@ -60,14 +60,14 @@
                 <depend id="112" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="9" name="Task 2 - Multiple Choice Questions" color="#33ff33" meeting="false" start="2015-10-21" duration="12" complete="0" expand="true">
-            <task id="11" name="Read Chapter 12" color="#33ff33" meeting="false" start="2015-10-21" duration="1" complete="0" expand="true">
+        <task id="9" name="Task 2 - Multiple Choice Questions" color="#33ff33" meeting="false" start="2015-10-21" duration="12" complete="10" expand="true">
+            <task id="11" name="Read Chapter 12" color="#33ff33" meeting="false" start="2015-10-21" duration="1" complete="100" expand="true">
                 <depend id="17" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="13" name="Read Chapter 13" color="#33ff33" meeting="false" start="2015-10-22" duration="1" complete="0" expand="true">
+            <task id="13" name="Read Chapter 13" color="#33ff33" meeting="false" start="2015-10-22" duration="1" complete="100" expand="true">
                 <depend id="17" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="15" name="Read Chapter 14" color="#33ff33" meeting="false" start="2015-10-23" duration="1" complete="0" expand="true">
+            <task id="15" name="Read Chapter 14" color="#33ff33" meeting="false" start="2015-10-23" duration="1" complete="100" expand="true">
                 <depend id="17" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="17" name="Reading Completed!" color="#33ff33" meeting="true" start="2015-10-24" duration="0" complete="0" expand="true">
@@ -95,7 +95,7 @@
                 <depend id="112" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="29" name="Task 3 - Essay" color="#0000ff" meeting="false" start="2015-10-20" duration="13" complete="0" expand="true">
+        <task id="29" name="Task 3 - Essay" color="#0000ff" meeting="false" start="2015-10-20" duration="13" complete="0" expand="false">
             <task id="43" name="Research Waterfall Methodologies" color="#0000ff" meeting="false" start="2015-10-20" duration="1" complete="0" expand="true">
                 <depend id="46" type="2" difference="0" hardness="Strong"/>
                 <depend id="47" type="2" difference="0" hardness="Strong"/>
