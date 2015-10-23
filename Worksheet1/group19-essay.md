@@ -1,6 +1,9 @@
-##A comparison of waterfall and agile methodologies
+##Group 19: Comparison of Agile and Waterfall 
 
-  Agile and Waterfall are methodologies used in software development. They are fundamentally different; Agile was designed to rectify Waterfalls shortcomings (such as implementing changes; near impossible with Waterfall, but very easy with Agile). This essay explores some of the differences between the two.
+##Project Management
+
+##Introduction
+Agile and Waterfall are methodologies used in software development. They are fundamentally different; Agile was designed to rectify Waterfalls shortcomings (such as implementing changes; near impossible with Waterfall, but very easy with Agile). This essay explores some of the differences between the two.
 
 In terms of structure, the two methodologies are complete opposites. Agile consists of “incremental, iterative work cadences” [1] called sprints (sections of time often 2-4 weeks in length whereby a set of tasks is decided, worked upon and reviewed). Waterfall (aka “linear-sequential life cycle model” [2]) is linear; there are multiple phases (requirements, design, implementation, verification, maintenance) which cannot overlap; the previous phase must be completed before the next can start. These phases often have ‘phase gates’ in-between (e.g. requirements being reviewed and approved before design can begin).
 
@@ -14,10 +17,19 @@ Deciding which methodology to use comes down to the type of project. Agile is mo
 
 Agile puts an emphasis on speed; throughout development there are many, small releases (a working piece of software could be delivered after a single sprint; “because the products are tested so thoroughly with Agile, the product could be launched at the end of any cycle” [4]). The lack of real documentation in Agile isn’t so much of an issue when the customer can step in at almost any point and put a hold to features they deem unworthy, or suggest new features. In contrast, Waterfall emphasises record keeping (the entire project is pre-planned and the plan followed during each phase; “At the end of each phase, a review takes place to determine if the project is on the right path and whether or not to continue or discard the project” [2]). This is needed as Waterfall has only one main release, at the end of the project lifecycle. If the planning wasn’t performed thoroughly enough, the end product will almost certainly not meet requirements, and the customer will be unhappy.
 
-Bibliography
-1. [1]: http://agilemethodology.org/
-2. [2]: http://istqbexamcertification.com/what-is-waterfall-model-advantages-disadvantages-and-when-to-use-it/
-3. [3]: http://www.seguetech.com/blog/2013/07/05/waterfall-vs-agile-right-development-methodology
-4. [4]: http://www.base36.com/2012/12/agile-waterfall-methodologies-a-side-by-side-comparison/
-5. [5]: http://manifesto.co.uk/agile-vs-waterfall-comparing-project-management-methodologies/
-6. [6]: http://www.ambysoft.com/essays/agileRoles.html 
+![Agile development](EssayImages/Agile.png)
+![Waterfall development](EssayImages/Waterfall.png)
+
+###Bibliography
+
+* [1]: http://agilemethodology.org/
+ 
+* [2]: http://istqbexamcertification.com/what-is-waterfall-model-advantages-disadvantages-and-when-to-use-it/
+ 
+* [3]: http://www.seguetech.com/blog/2013/07/05/waterfall-vs-agile-right-development-methodology
+ 
+* [4]: http://www.base36.com/2012/12/agile-waterfall-methodologies-a-side-by-side-comparison/
+ 
+* [5]: http://manifesto.co.uk/agile-vs-waterfall-comparing-project-management-methodologies/
+
+* [6]: http://www.ambysoft.com/essays/agileRoles.html 
