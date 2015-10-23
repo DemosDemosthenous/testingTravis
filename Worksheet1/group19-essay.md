@@ -1,4 +1,4 @@
-A comparison of waterfall and agile methodologies
+#A comparison of waterfall and agile methodologies
 
 Agile and Waterfall are methodologies used in software development. They are fundamentally different; Agile was designed to rectify Waterfalls shortcomings (such as implementing changes; near impossible with Waterfall, but very easy with Agile). This essay explores some of the differences between the two.
 In terms of structure, the two methodologies are complete opposites. Agile consists of “incremental, iterative work cadences” [1] called sprints (sections of time often 2-4 weeks in length whereby a set of tasks is decided, worked upon and reviewed). Waterfall (aka “linear-sequential life cycle model” [2]) is linear; there are multiple phases (requirements, design, implementation, verification, maintenance) which cannot overlap; the previous phase must be completed before the next can start. These phases often have ‘phase gates’ in-between (e.g. requirements being reviewed and approved before design can begin).
