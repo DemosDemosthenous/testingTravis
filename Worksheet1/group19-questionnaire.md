@@ -45,3 +45,29 @@ Chapter 12
 >3.Selling software that has a lot of bugs
 
 >**Answer:**1
+
+Chapter 13
+---
+**Q1**.Choose the statement that is **wrong**. 
+>1.The Data Protection Act allows the use of data for reasons that the data were not collected for.  
+>2.When people began to use the internet for a wider range of purposes, it became possible to build profiles of their habits for marketing purposes.  
+>3.The Data Protection Act does not allow the use of incomplete, inaccurate or irrelevant data.
+
+>**Answer:**1
+
+**Q2**.Which of the following is considered  as **Sensitive** personal Data?
+>1.Intentions of a person towards the individual  
+>2.Opinions about the individual  
+>3.Religious beliefs of the individual
+
+>**Answer:**3
+
+**Q3**.What is one consequence of the use of cookies regarding Data protection?
+
+>1.The only thing that websites have to do is to inform the user about the use of cookies.  
+>2.The websites have to inform the user about the use of cookies but also have to give him/her the opportunity  to refuse accepting them.  
+>3.Websites don't have to have to inform the user about the use of cookies in the script.
+
+**Answer:**2
+
+
