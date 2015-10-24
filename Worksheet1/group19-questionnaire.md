@@ -56,7 +56,7 @@ Chapter 13
 >**Answer:**1
 
 **Q2**.Which of the following is considered  as **Sensitive** personal Data?
->1.Intentions of a person towards the individual  
+>1.Intentions of a person towards the individual(eg. The boss is going to promote him)  
 >2.Opinions about the individual  
 >3.Religious beliefs of the individual
 
