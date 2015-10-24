@@ -1,7 +1,66 @@
 ##Group 19: Comparison of Agile and Waterfall Project Management
 
+
+###Abstract
+Agile methodology and waterfall model are the common methods of software development. They are fundamentally different; Agile was designed to rectify Waterfalls shortcomings (such as implementing changes; near impossible with Waterfall, but very easy with Agile). Nowadays, the popularity of waterfall model is falling while more people are preferring the agile methods instead. In this essay, I will show you what those methods really are and the differnces between them.
+
+
+
+
+
 ###Introduction
-Agile and Waterfall are methodologies used in software development. They are fundamentally different; Agile was designed to rectify Waterfalls shortcomings (such as implementing changes; near impossible with Waterfall, but very easy with Agile). This essay explores some of the differences between the two.
+Theˇwaterfall modelˇis aˇsequentialˇdesignˇprocess, used inˇsoftware development processes‚Äù [7]. This method is very easy to use and understand. Each step in the progress is flowing steadily from the top to bottom like a waterfall.
+
+###A visual guide to Waterfall
+![Waterfall development](EssayImages/Waterfall.png)
+
+In the waterfall model, each step must be finished before the next step can begin therefore the steps must not be overlaped. This model is best used for the for the small project and there are no uncertain requirements as it can?t be changed afterwards. ˇAt the end of each step, a review takes place to check if the project is relevant and decide whether or not to carry on or cancel the project. The testing will only start when the development stage is completed ‚Äù [2].
+
+
+
+
+
+An Agile software development methodology e.g. Scrum is an incremental and iterative sequential approach for managing product development. This method defines a flexible, hollistic product development strategy where the cross-funtional team works as a unit to reach common goal‚Äù [8].
+
+###A visual guide to Agile
+![Agile development](EssayImages/Agile.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The steps of the scrum are shown below ‚Äù [9]:
+
+
+1.  A product owner creates a priortized list of the product?s requirements called product backlog. The requirements are gathered from the end users, customers, team and other stakeholders.
+
+2.  The sprint backlog contains all the requiremnts in the current sprint. During sprint planning, the team pulls a small piece from the top of that priortized list and implement those pieces together.
+
+3.  A sprint indicates the amount of time that the team have to finish its work. The fixed length of a sprint is usually 2 to 4 weeks. 
+
+4.  A scrum meeting in the sprint takes place daily to assess the team?s progress.
+
+5.  At the end of every sprint, the development team should be able to deliver a potentially shippable product that is tested and works well to the customer and stakeholders.
+  
+6.  The sprint ends with a sprint review and customer?s feedback.
+  
+7.  The next sprint starts, the development team select another piece of the requirements from the priortized list and begins working again.
+
+
+
+
+
 
 ###Main
 
@@ -17,11 +76,6 @@ Deciding which methodology to use comes down to the type of project. Agile is mo
 
 Agile puts an emphasis on speed; throughout development there are many, small releases (a working piece of software could be delivered after a single sprint; ‚Äúbecause the products are tested so thoroughly with Agile, the product could be launched at the end of any cycle‚Äù [4]). The lack of real documentation in Agile isn‚Äôt so much of an issue when the customer can step in at almost any point and put a hold to features they deem unworthy, or suggest new features. In contrast, Waterfall emphasises record keeping (the entire project is pre-planned and the plan followed during each phase; ‚ÄúAt the end of each phase, a review takes place to determine if the project is on the right path and whether or not to continue or discard the project‚Äù [2]). This is needed as Waterfall has only one main release, at the end of the project lifecycle. If the planning wasn‚Äôt performed thoroughly enough, the end product will almost certainly not meet requirements, and the customer will be unhappy.
 
-###A visual guide to Agile
-![Agile development](EssayImages/Agile.png)
-
-###A visual guide to Waterfall
-![Waterfall development](EssayImages/Waterfall.png)
 
 ###Bibliography
 
@@ -36,3 +90,12 @@ Agile puts an emphasis on speed; throughout development there are many, small re
 * [5]: http://manifesto.co.uk/agile-vs-waterfall-comparing-project-management-methodologies/
 
 * [6]: http://www.ambysoft.com/essays/agileRoles.html 
+
+* [7]: https://en.wikipedia.org/wiki/Waterfall_model
+
+
+* [8]: https://en.wikipedia.org/wiki/Scrum_(software_development)
+
+
+* [9]: http://istqbexamcertification.com/what-are-agile-software-development-approaches-scrum-kanban-xp-explained/#more-1740
+
