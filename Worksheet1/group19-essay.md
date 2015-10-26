@@ -1,26 +1,22 @@
 ##Group 19: Comparison of Agile and Waterfall Project Management
 
-
-###Abstract
-Agile methodology and waterfall model are the common methods of software development. They are fundamentally different; Agile was designed to rectify Waterfalls shortcomings (such as implementing changes; near impossible with Waterfall, but very easy with Agile). Nowadays, the popularity of waterfall model is falling while more people are preferring the agile methods instead. In this essay, I will show you what those methods really are and the differnces between them.
-
-
-
-
-
 ###Introduction
+
+Agile methodology and waterfall model are the common methods of software development. They are fundamentally different; Agile was designed to rectify Waterfalls shortcomings (such as implementing changes; near impossible with Waterfall, but very easy with Agile). Nowadays, the popularity of waterfall model is falling while more people are preferring the agile methods instead. In this essay, I will show you what those methods really are and the differences between them.
+
+
 The waterfall model is a sequential design process, used in software development processes[7]. This method is very easy to use and understand. Each step in the progress is flowing steadily from the top to bottom like a waterfall.
 
 ###A visual guide to Waterfall
 ![Waterfall development](EssayImages/Waterfall.png)
 
-In the waterfall model, each step must be finished before the next step can begin therefore the steps must not be overlaped. This model is best used for the for the small project and there are no uncertain requirements as it cannot be changed afterwards. At the end of each step, a review takes place to check if the project is relevant and decide whether or not to carry on or cancel the project. The testing will only start when the development stage is completed[2].
+In the waterfall model, each step must be finished before the next step can begin therefore the steps must not be overlapped. This model is best used for the for the small project and there are no uncertain requirements as it cannot be changed afterwards. At the end of each step, a review takes place to check if the project is relevant and decide whether or not to carry on or cancel the project. The testing will only start when the development stage is completed[2].
 
 
 
 
 
-An Agile software development methodology e.g. Scrum is an incremental and iterative sequential approach for managing product development. This method defines a flexible, hollistic product development strategy where the cross-funtional team works as a unit to reach common goal[8].
+An Agile software development methodology e.g. Scrum is an incremental and iterative sequential approach for managing product development. This method defines a flexible, holistic product development strategy where the cross-functional team works as a unit to reach common goal[8].
 
 ###A visual guide to Agile
 ![Agile development](EssayImages/Agile.png)
@@ -29,9 +25,9 @@ An Agile software development methodology e.g. Scrum is an incremental and itera
 The steps of the scrum are shown below[9]:
 
 
-1.  A product owner creates a priortized list of the products requirements called product backlog. The requirements are gathered from the end users, customers, team and other stakeholders.
+1.  A product owner creates a prioritised list of the products requirements called product backlog. The requirements are gathered from the end users, customers, team and other stakeholders.
 
-2.  The sprint backlog contains all the requiremnts in the current sprint. During sprint planning, the team pulls a small piece from the top of that priortized list and implement those pieces together.
+2.  The sprint backlog contains all the requirements in the current sprint. During sprint planning, the team pulls a small piece from the top of that prioritised list and implement those pieces together.
 
 3.  A sprint indicates the amount of time that the team have to finish its work. The fixed length of a sprint is usually 2 to 4 weeks. 
 
@@ -41,7 +37,7 @@ The steps of the scrum are shown below[9]:
   
 6.  The sprint ends with a sprint review and customers feedback.
   
-7.  The next sprint starts, the development team select another piece of the requirements from the prioritized list and begins working again.
+7.  The next sprint starts, the development team select another piece of the requirements from the prioritised list and begins working again.
 
 
 ###Main
@@ -52,7 +48,7 @@ Another difference is the level of stakeholder/customer involvement.  With Agile
 
 The ease of amending the project mid-development varies with the method used. A Waterfall project may be doomed if the initial requirements (which it relies heavily on) are faulty in any manner. (If a requirement error is found, or a change needs to be made, the project has to start from the beginning with all new code.[4]). Once testing has started amendments are almost impossible to make without disrupting all other completed phases; there is no method to work backwards. If a bug is found the entire process must be restarted to create a fix. With Agile the project is reviewed at the end of each sprint; any bugs discovered are immediately placed into the sprint backlog to be dealt with, and customers are consulted to ensure the project remains on track. This allows for changes to be easily incorporated, and any issue to be ironed out. Agile methods are more flexible than the waterfall method which means that customers requests are more likely to be met[5]. However, Agile lacks definitive planning; the final deliverable may be fairly different from what was initially intended.
 
-Team members in Agile and Waterfall differ in the number of roles they play; Agile teams are formed (mostly) of generalizing specialist someone who has one or more technical specialties (e.g. Java programming, project management, database administration)[6]. In Agile, if someone is working on a particular task and has become stuck, they should be able to call on any member of the team to provide (at least some) basic assistance. This makes the team much more fluid as a whole, and the chance of completing tasks increases. Waterfall teams consist of people that perform only their dedicated role. However this does not mean they are sat idly when their phase is complete; it is possible for various members of the team to be involved or to continue with other work, depending on the active phase of the project.[3] In both methodologies team members can be lent from one team to another.
+Team members in Agile and Waterfall differ in the number of roles they play; Agile teams are formed (mostly) of generalising specialist someone who has one or more technical specialties (e.g. Java programming, project management, database administration)[6]. In Agile, if someone is working on a particular task and has become stuck, they should be able to call on any member of the team to provide (at least some) basic assistance. This makes the team much more fluid as a whole, and the chance of completing tasks increases. Waterfall teams consist of people that perform only their dedicated role. However this does not mean they are sat idly when their phase is complete; it is possible for various members of the team to be involved or to continue with other work, depending on the active phase of the project.[3] In both methodologies team members can be lent from one team to another.
 
 Deciding which methodology to use comes down to the type of project. Agile is modular development; well suited to object-oriented projects with various different features and requirements. However Agile may lose its way with large projects/organisations and introduce extra inefficiencies[5]. Waterfall works great with small projects with clearly defined requirements and a well thought out plan, where the likelihood of deviation is low.
 
