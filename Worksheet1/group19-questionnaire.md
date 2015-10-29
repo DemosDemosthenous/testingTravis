@@ -35,7 +35,7 @@ Chapter 12
 >2.The end product of the consultancy is a report.  
 >3.Refuse to cover damages made to the company because of a false decision suggested by you.  
 
->**Anwser:**3
+>**Answer:**3
 
 **Q5**.What does **not** the **Unfair Contract Terms Act 1977** restricts about the liability for defective software?
 
@@ -56,19 +56,36 @@ Chapter 13
 >**Answer:**1
 
 **Q2**.Which of the following is considered  as **Sensitive** personal Data?
->1.Intentions of a person towards the individual(eg. The boss is going to promote him).  
+>1.Intentions of a person towards the individual(e.g. The boss is going to promote him).  
 >2.Opinions about the individual.  
 >3.Religious beliefs of the individual.
 
->**Answer:**3
+>**Answer:**3  
 
-**Q3**.What is one consequence of the use of cookies regarding Data protection?
+**Q3**.How many data protection principles does the 1998 Act lays down?
+
+>1.7.  
+>2.8.  
+>3.9.
+
+**Answer:**2  
+
+**Q4**.What is one consequence of the use of cookies regarding Data protection?
 
 >1.The only thing that websites have to do is to inform the user about the use of cookies.  
 >2.The websites have to inform the user about the use of cookies but also have to give him/her the opportunity  to refuse accepting them.  
 >3.Websites don't have to have to inform the user about the use of cookies in the script.
 
 **Answer:**2  
+
+**Q5**.What organizations that provide computer and telephone services can do, under the Regulation of Investigatory Powers Act 200(RIPA)?
+
+>1.they can monitor and record communications without the consent of the users.  
+>2.they cannot monitor and record communications without the consent of the users.  
+>3.they can share personal information with other companies that have the same operations and purposes with them.
+
+**Answer:**1  
+
 
 Chapter 14
 ---
@@ -100,7 +117,7 @@ Chapter 14
 >2.Will inform all of its ISPs members to block access from the UK.    
 >3.Will have to file a form demanding the material to be removed.  
 
->**Anwser:**2
+>**Answer:**2
 
 **Q5**.One way to get rid of telephone spam is to register your number as one that does not accept unsolicited direct marketing calls. Could we do the same with spam emails?  
 
