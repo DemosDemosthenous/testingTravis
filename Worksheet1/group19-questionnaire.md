@@ -31,9 +31,9 @@ Chapter 12
 
 **Q4**.Suppose you are a consultant for an organization to assess its strategy and suggest improvements. What action would breach the consultancy contract you signed?
 
->1.Not misusing information about the company.
->2.The end product of the consultancy is a report.  
->3.Refuse to cover damages made to the company because of a false decision suggested by you.  
+>1.Not misusing information about the company.  
+>2.The end product of the consultancy is a report.    
+>3.Refuse to cover damages made to the company because of a false decision suggested by you.    
 
 >**Answer:**3
 
@@ -62,7 +62,7 @@ Chapter 13
 
 >**Answer:**3  
 
-**Q3**.How many data protection principles does the 1998 Act lays down?
+**Q3**.How many data protection principles does the 1998 Data Protection Act lays down?
 
 >1.7.  
 >2.8.  
@@ -78,7 +78,7 @@ Chapter 13
 
 **Answer:**2  
 
-**Q5**.What organizations that provide computer and telephone services can do, under the Regulation of Investigatory Powers Act 200(RIPA)?
+**Q5**.What organizations that provide computer and telephone services can do, under the Regulation of Investigatory Powers Act 2000(RIPA)?
 
 >1.they can monitor and record communications without the consent of the users.  
 >2.they cannot monitor and record communications without the consent of the users.  
