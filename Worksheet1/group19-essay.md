@@ -2,7 +2,7 @@
 
 ###Introduction
 
-Agile methodology and waterfall model are the common methods of software development. They are fundamentally different; Agile was designed to rectify Waterfalls shortcomings (such as implementing changes; near impossible with Waterfall, but very easy with Agile). Nowadays, the popularity of waterfall model is falling while more people are preferring the agile methods instead. In this essay, I will show you what those methods really are and the differences between them.
+Agile and Waterfall are two of the most common methodologies used in software development. They are fundamentally different - Agile was designed to make up for Waterfall's shortcomings (e.g. Agile can implement changes swiftly, while Waterfall does not). Nowadays, the popularity of Waterfall is reducing due to more people preferring Agile. In this essay, I will explain each of the methodologies, and show the differences between them.
 
 
 The waterfall model is a sequential design process, used in software development processes[7]. This method is very easy to use and understand. Each step in the progress is flowing steadily from the top to bottom like a waterfall.
@@ -10,13 +10,13 @@ The waterfall model is a sequential design process, used in software development
 ###A visual guide to Waterfall
 ![Waterfall development](EssayImages/Waterfall.png)
 
-In the waterfall model, each step must be finished before the next step can begin therefore the steps must not be overlapped. This model is best used for the for the small project and there are no uncertain requirements as it cannot be changed afterwards. At the end of each step, a review takes place to check if the project is relevant and decide whether or not to carry on or cancel the project. The testing will only start when the development stage is completed[2].
+In the Waterfall model, each step must be finished before the next step can begin, therefore the steps must not overlap. This model is best used for the for small projects and cannot include uncertain requirements, as Waterfall does not allow changing these requirements. At the end of each step, a review takes place to check if the project is relevant, and decide whether or not to carry on or cancel the project. The testing will only start when the development stage is completed[2].
 
 
 
 
 
-An Agile software development methodology e.g. Scrum is an incremental and iterative sequential approach for managing product development. This method defines a flexible, holistic product development strategy where the cross-functional team works as a unit to reach common goal[8].
+An Agile software development methodology, such as Scrum, is an incremental and iterative sequential approach for managing product development. This method defines a flexible, holistic product development strategy where the cross-functional team works as a unit to reach common goal[8].
 
 ###A visual guide to Agile
 ![Agile development](EssayImages/Agile.png)
@@ -25,17 +25,17 @@ An Agile software development methodology e.g. Scrum is an incremental and itera
 The steps of the scrum are shown below[9]:
 
 
-1.  A product owner creates a prioritised list of the products requirements called product backlog. The requirements are gathered from the end users, customers, team and other stakeholders.
+1.  A product owner creates a prioritised list of the product's requirements called product backlog. The requirements are gathered from the end users, customers, team and other stakeholders.
 
-2.  The sprint backlog contains all the requirements in the current sprint. During sprint planning, the team pulls a small piece from the top of that prioritised list and implement those pieces together.
+2.  The sprint backlog contains all the requirements in the current sprint. During sprint planning, the team pulls a small piece from the top of that prioritised list and implements those pieces together.
 
-3.  A sprint indicates the amount of time that the team have to finish its work. The fixed length of a sprint is usually 2 to 4 weeks. 
+3.  A sprint indicates the amount of time that the team have to finish its work. The length of a sprint is usually 2 to 4 weeks. 
 
-4.  A scrum meeting in the sprint takes place daily to assess the team progress.
+4.  A scrum meeting takes place daily to assess the team's progress during the sprint.
 
 5.  At the end of every sprint, the development team should be able to deliver a potentially shippable product that is tested and works well to the customer and stakeholders.
   
-6.  The sprint ends with a sprint review and customers feedback.
+6.  The sprint ends with a sprint review and customers' feedback.
   
 7.  The next sprint starts, the development team select another piece of the requirements from the prioritised list and begins working again.
 
