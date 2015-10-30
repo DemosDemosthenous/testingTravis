@@ -7,7 +7,7 @@ Agile and Waterfall are two of the most common methodologies used in software de
 
 The waterfall model is a sequential design process, used in software development processes[7]. This method is very easy to use and understand. Each step in the progress is flowing steadily from the top to bottom like a waterfall.
 
-###A visual guide to Waterfall
+###A visual guide to Waterfall[10]
 ![Waterfall development](EssayImages/Waterfall.png)
 
 In the Waterfall model, each step must be finished before the next step can begin, therefore the steps must not overlap. This model is best used for the for small projects and cannot include uncertain requirements, as Waterfall does not allow changing these requirements. At the end of each step, a review takes place to check if the project is relevant, and decide whether or not to carry on or cancel the project. The testing will only start when the development stage is completed[2].
@@ -18,7 +18,7 @@ In the Waterfall model, each step must be finished before the next step can begi
 
 An Agile software development methodology, such as Scrum, is an incremental and iterative sequential approach for managing product development. This method defines a flexible, holistic product development strategy where the cross-functional team works as a unit to reach common goal[8].
 
-###A visual guide to Agile
+###A visual guide to Agile[5]
 ![Agile development](EssayImages/Agile.png)
 
 
@@ -71,8 +71,9 @@ Agile puts an emphasis on speed; throughout development there are many, small re
 
 * [7]: https://en.wikipedia.org/wiki/Waterfall_model
 
-
 * [8]: https://en.wikipedia.org/wiki/Scrum_(software_development)
 
 * [9]: http://istqbexamcertification.com/what-are-agile-software-development-approaches-scrum-kanban-xp-explained/#more-1740
+
+*[10]: http://learnaccessvba.com/application_development/waterfall_method.htm
 
