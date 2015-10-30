@@ -75,5 +75,5 @@ Agile puts an emphasis on speed; throughout development there are many, small re
 
 * [9]: http://istqbexamcertification.com/what-are-agile-software-development-approaches-scrum-kanban-xp-explained/#more-1740
 
-*[10]: http://learnaccessvba.com/application_development/waterfall_method.htm
+* [10]: http://learnaccessvba.com/application_development/waterfall_method.htm
 
