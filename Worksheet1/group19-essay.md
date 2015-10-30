@@ -69,9 +69,9 @@ Agile puts an emphasis on speed; throughout development there are many, small re
 
 * [6]: http://www.ambysoft.com/essays/agileRoles.html 
 
-* [7]: https://en.wikipedia.org/wiki/Waterfall_model
+* [7]: https://glose.com/book/scrum/preface/54462c9b60689e0473aa0e79
 
-* [8]: https://en.wikipedia.org/wiki/Scrum_(software_development)
+* [8]: http://www.1stop2start.com/services/scrum/
 
 * [9]: http://istqbexamcertification.com/what-are-agile-software-development-approaches-scrum-kanban-xp-explained/#more-1740
 
