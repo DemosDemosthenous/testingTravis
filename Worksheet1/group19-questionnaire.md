@@ -68,7 +68,7 @@ Chapter 13
 >2. 8.  
 >3. 9.
 
-**Answer:** 2  
+>**Answer:** 2  
 
 **Q4**. What is one consequence of the use of cookies regarding Data protection?
 
@@ -76,7 +76,7 @@ Chapter 13
 >2. The websites have to inform the user about the use of cookies but also have to give him/her the opportunity  to refuse accepting them.  
 >3. Websites don't have to have to inform the user about the use of cookies in the script.
 
-**Answer:** 2  
+>**Answer:** 2  
 
 **Q5**. What organizations that provide computer and telephone services can do, under the Regulation of Investigatory Powers Act 2000(RIPA)?
 
@@ -84,7 +84,7 @@ Chapter 13
 >2. they cannot monitor and record communications without the consent of the users.  
 >3. they can share personal information with other companies that have the same operations and purposes with them.
 
-**Answer:** 1  
+>**Answer:** 1  
 
 
 Chapter 14
@@ -109,7 +109,7 @@ Chapter 14
 >2. Yes but only in the UK. It would not be considered defamatory in the USA.    
 >3. Yes but only in the USA. It would not be considered defamatory in the UK.  
 
-**Answer:** 2 
+>**Answer:** 2 
 
 **Q4**. How will Internet Watch Foundation (IWF) act against illegal material which are located abroad?    
 
