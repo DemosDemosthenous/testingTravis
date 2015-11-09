@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Plan" company="" webLink="http://" view-date="2015-10-31" view-index="0" gantt-divider-location="501" resource-divider-location="300" version="2.7.1" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Plan" company="" webLink="http://" view-date="2015-10-12" view-index="0" gantt-divider-location="501" resource-divider-location="300" version="2.7.1" locale="en_GB">
     <description/>
-    <view zooming-state="default:1" id="gantt-chart">
+    <view zooming-state="default:6" id="gantt-chart">
         <field id="tpd3" name="Name" width="50" order="0"/>
-        <field id="tpd4" name="Begin date" width="24" order="1"/>
+        <field id="tpd4" name="Begin date" width="25" order="1"/>
         <field id="tpd5" name="End date" width="24" order="2"/>
-        <option id="color.recent"><![CDATA[#00cccc #cc0000 #ff0000 #ff6666 #0000ff #ffff66 #660066 #33ff33]]></option>
+        <option id="color.recent"><![CDATA[#660066 #00ff33 #f4f4f4 #ffff66 #00cccc #cc0000 #ff0000 #ff6666 #0000ff #33ff33]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="50" order="0"/>
-        <field id="1" name="Default role" width="50" order="1"/>
+        <field id="1" name="Default role" width="49" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -34,11 +34,11 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Task 1 - Planning and Monitoring" color="#000000" meeting="false" start="2015-11-02" duration="36" complete="0" expand="true">
+        <task id="0" name="Task 1 - Planning and Monitoring" color="#000000" meeting="false" start="2015-11-02" duration="36" complete="4" expand="true">
             <task id="2" name="Ask Commit hours from people" color="#8cb6ce" meeting="false" start="2015-11-02" duration="1" complete="100" expand="true">
                 <depend id="3" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="3" name="Do Gantt Chart" color="#8cb6ce" meeting="false" start="2015-11-03" duration="4" complete="0" expand="true">
+            <task id="3" name="Do Gantt Chart" color="#8cb6ce" meeting="false" start="2015-11-03" duration="4" complete="100" expand="true">
                 <depend id="4" type="2" difference="0" hardness="Strong"/>
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
                 <depend id="6" type="2" difference="0" hardness="Strong"/>
@@ -56,20 +56,23 @@
             <task id="8" name="Checking by the rest of the group" color="#8cb6ce" meeting="false" start="2015-11-04" duration="34" complete="0" expand="true">
                 <depend id="9" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="9" name="Task Complete" color="#8cb6ce" meeting="true" start="2015-12-08" duration="0" complete="0" expand="true"/>
+            <task id="9" name="Task Complete" color="#8cb6ce" meeting="true" start="2015-12-08" duration="0" complete="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
         </task>
         <task id="43" name="Task 2 - Requirements" color="#000000" meeting="false" start="2015-11-03" duration="35" complete="2" expand="true">
             <task id="45" name="Read the rules of the game" color="#00cccc" meeting="false" start="2015-11-03" duration="1" complete="100" expand="true">
-                <depend id="47" type="1" difference="0" hardness="Strong"/>
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="47" name="Create Requirements" color="#00cccc" meeting="false" start="2015-11-03" duration="8" complete="11" expand="true">
+            <task id="47" name="Create Requirements" color="#00cccc" meeting="false" start="2015-11-04" duration="4" complete="11" expand="true">
                 <depend id="53" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="53" name="Proofread" color="#00cccc" meeting="false" start="2015-11-11" duration="1" complete="0" expand="true">
+            <task id="53" name="Proofread" color="#00cccc" meeting="false" start="2015-11-08" duration="1" complete="0" expand="true">
                 <depend id="58" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="58" name="Requirements Completed" color="#00cccc" meeting="true" start="2015-11-12" duration="0" complete="0" expand="true">
+            <task id="58" name="Requirements Completed" color="#00cccc" meeting="true" start="2015-11-09" duration="0" complete="0" expand="true">
                 <depend id="78" type="2" difference="0" hardness="Strong"/>
+                <depend id="80" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="62" name="Upload Versions to GitHub" color="#00cccc" meeting="false" start="2015-11-03" duration="35" complete="0" expand="true">
                 <depend id="78" type="2" difference="0" hardness="Strong"/>
@@ -77,16 +80,92 @@
             <task id="71" name="Checking by the rest of the group" color="#00cccc" meeting="false" start="2015-11-04" duration="34" complete="0" expand="true">
                 <depend id="78" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="78" name="Task Complete" color="#00cccc" meeting="true" start="2015-12-08" duration="0" complete="0" expand="true"/>
+            <task id="78" name="Task Complete" color="#00cccc" meeting="true" start="2015-12-08" duration="0" complete="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="79" name="Task 3 - Design" meeting="false" start="2015-11-09" duration="27" complete="0" expand="true">
+            <task id="80" name="Plan rough class diagram" color="#ffff66" meeting="false" start="2015-11-09" duration="2" complete="0" expand="true">
+                <depend id="81" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="81" name="Create class diagram" color="#ffff66" meeting="false" start="2015-11-11" duration="2" complete="0" expand="true">
+                <depend id="82" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="82" name="Proofread" color="#ffff66" meeting="false" start="2015-11-13" duration="2" complete="0" expand="true">
+                <depend id="86" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="86" name="Diagram complete" color="#ffff66" meeting="true" start="2015-11-15" duration="0" complete="0" expand="true">
+                <depend id="85" type="2" difference="0" hardness="Strong"/>
+                <depend id="108" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="83" name="Upload Versions to GitHub" color="#ffff66" meeting="false" start="2015-11-11" duration="25" complete="0" expand="true">
+                <depend id="85" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="84" name="Checking by rest of the group" color="#ffff66" meeting="false" start="2015-11-12" duration="24" complete="0" expand="true">
+                <depend id="85" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="85" name="Task Complete" color="#ffff66" meeting="true" start="2015-12-06" duration="0" complete="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="88" name="Task 4 - Configuration" meeting="false" start="2015-11-02" duration="36" complete="5" expand="true">
+            <task id="90" name="Discuss and note group's preferred style" color="#660066" meeting="false" start="2015-11-02" duration="2" complete="100" expand="true">
+                <depend id="91" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="91" name="Create rough draft of checkstyle" color="#660066" meeting="false" start="2015-11-04" duration="2" complete="100" expand="true">
+                <depend id="92" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="92" name="Create final Checkstyle" color="#660066" meeting="false" start="2015-11-06" duration="3" complete="0" expand="true">
+                <depend id="98" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="98" name="Checkstyle file complete" color="#660066" meeting="true" start="2015-11-09" duration="0" complete="0" expand="true">
+                <depend id="100" type="2" difference="0" hardness="Strong"/>
+                <depend id="108" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="94" name="Upload Versions to GitHub" color="#660066" meeting="false" start="2015-11-04" duration="34" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                <depend id="100" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="96" name="Checking by the rest of the group" color="#660066" meeting="false" start="2015-11-05" duration="33" complete="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                <depend id="100" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="100" name="Task Complete" color="#660066" meeting="true" start="2015-12-08" duration="0" complete="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="89" name="Task 5 - Implementation" meeting="false" start="2015-11-15" duration="23" complete="0" expand="true">
+            <task id="108" name="Setup project including class creation" color="#00ff33" meeting="false" start="2015-11-15" duration="4" complete="0" expand="true">
+                <depend id="109" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="109" name="Add save/load function" color="#00ff33" meeting="false" start="2015-11-19" duration="3" complete="0" expand="true">
+                <depend id="110" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="110" name="Add cucumber functionality" color="#00ff33" meeting="false" start="2015-11-22" duration="4" complete="0" expand="true">
+                <depend id="111" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="111" name="Create and implement tests" color="#00ff33" meeting="false" start="2015-11-26" duration="3" complete="0" expand="true">
+                <depend id="120" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="120" name="Implementation complete" color="#00ff33" meeting="true" start="2015-11-29" duration="0" complete="0" expand="true">
+                <depend id="121" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="116" name="Upload Versions to GitHub" color="#00ff33" meeting="false" start="2015-11-15" duration="23" complete="0" expand="true">
+                <depend id="121" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="118" name="Checking by rest of the group" color="#00ff33" meeting="false" start="2015-11-16" duration="22" complete="0" expand="true">
+                <depend id="121" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="121" name="Task complete" color="#00ff33" meeting="true" start="2015-12-08" duration="0" complete="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
         </task>
         <task id="12" name="Meetings" color="#000000" meeting="false" start="2015-11-02" duration="35" complete="0" expand="true">
-            <task id="13" name="First Meeting" color="#ff6666" meeting="true" start="2015-11-02" duration="0" complete="0" expand="true"/>
+            <task id="13" name="First Meeting - allocate tasks, dicuss checkstyle" color="#ff6666" meeting="true" start="2015-11-02" duration="0" complete="0" expand="true"/>
             <task id="20" name="Second Meeting" color="#ff6666" meeting="true" start="2015-11-10" duration="0" complete="0" expand="true"/>
             <task id="22" name="Third Meeting" color="#ff6666" meeting="true" start="2015-11-17" duration="0" complete="0" expand="true"/>
             <task id="23" name="Fourth Meeting" color="#ff6666" meeting="true" start="2015-12-01" duration="0" complete="0" expand="true"/>
             <task id="25" name="Final Meeting" color="#ff6666" meeting="true" start="2015-12-07" duration="0" complete="0" expand="true"/>
         </task>
-        <task id="28" name="Submit Entire Project" color="#cc0000" meeting="true" start="2015-12-09" duration="0" complete="0" expand="true"/>
+        <task id="28" name="Submit Entire Project" color="#cc0000" meeting="true" start="2015-12-08" duration="0" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Konstantinos" function="Default:0" contacts="" phone=""/>
@@ -109,6 +188,7 @@
         <allocation task-id="22" resource-id="0" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="25" resource-id="0" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="12" resource-id="0" function="Default:0" responsible="false" load="0.0"/>
+        <allocation task-id="96" resource-id="0" function="Default:0" responsible="false" load="15.0"/>
         <allocation task-id="0" resource-id="1" function="Default:0" responsible="false" load="0.0"/>
         <allocation task-id="3" resource-id="1" function="Default:0" responsible="false" load="30.0"/>
         <allocation task-id="4" resource-id="1" function="Default:0" responsible="false" load="35.0"/>
@@ -121,6 +201,7 @@
         <allocation task-id="23" resource-id="1" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="25" resource-id="1" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="12" resource-id="1" function="Default:0" responsible="false" load="0.0"/>
+        <allocation task-id="96" resource-id="1" function="Default:0" responsible="false" load="15.0"/>
         <allocation task-id="8" resource-id="2" function="Default:0" responsible="false" load="15.0"/>
         <allocation task-id="45" resource-id="2" function="Default:0" responsible="false" load="30.0"/>
         <allocation task-id="43" resource-id="2" function="Default:0" responsible="false" load="0.0"/>
@@ -133,6 +214,7 @@
         <allocation task-id="23" resource-id="2" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="25" resource-id="2" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="12" resource-id="2" function="Default:0" responsible="false" load="0.0"/>
+        <allocation task-id="94" resource-id="2" function="Default:0" responsible="false" load="15.0"/>
         <allocation task-id="8" resource-id="3" function="Default:0" responsible="false" load="15.0"/>
         <allocation task-id="45" resource-id="3" function="Default:0" responsible="false" load="20.0"/>
         <allocation task-id="43" resource-id="3" function="Default:0" responsible="false" load="0.0"/>
@@ -145,6 +227,7 @@
         <allocation task-id="23" resource-id="3" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="25" resource-id="3" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="12" resource-id="3" function="Default:0" responsible="false" load="0.0"/>
+        <allocation task-id="94" resource-id="3" function="Default:0" responsible="false" load="15.0"/>
         <allocation task-id="8" resource-id="4" function="Default:0" responsible="false" load="15.0"/>
         <allocation task-id="71" resource-id="4" function="Default:0" responsible="false" load="15.0"/>
         <allocation task-id="13" resource-id="4" function="Default:0" responsible="false" load="25.0"/>
@@ -153,6 +236,7 @@
         <allocation task-id="23" resource-id="4" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="25" resource-id="4" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="12" resource-id="4" function="Default:0" responsible="false" load="0.0"/>
+        <allocation task-id="96" resource-id="4" function="Default:0" responsible="false" load="15.0"/>
         <allocation task-id="8" resource-id="5" function="Default:0" responsible="false" load="15.0"/>
         <allocation task-id="71" resource-id="5" function="Default:0" responsible="false" load="15.0"/>
         <allocation task-id="13" resource-id="5" function="Default:0" responsible="false" load="25.0"/>
@@ -161,17 +245,18 @@
         <allocation task-id="23" resource-id="5" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="25" resource-id="5" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="12" resource-id="5" function="Default:0" responsible="false" load="0.0"/>
+        <allocation task-id="96" resource-id="5" function="Default:0" responsible="false" load="15.0"/>
     </allocations>
     <vacations/>
     <taskdisplaycolumns>
         <displaycolumn property-id="tpd2" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd6" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="249" visible="true"/>
-        <displaycolumn property-id="tpd4" order="1" width="124" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="241" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="121" visible="true"/>
         <displaycolumn property-id="tpd7" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd12" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd5" order="2" width="124" visible="true"/>
+        <displaycolumn property-id="tpd5" order="2" width="120" visible="true"/>
         <displaycolumn property-id="tpd10" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd11" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
