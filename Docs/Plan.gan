@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Plan" company="" webLink="http://" view-date="2015-10-12" view-index="0" gantt-divider-location="501" resource-divider-location="300" version="2.7.1" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Plan" company="" webLink="http://" view-date="2015-10-29" view-index="0" gantt-divider-location="501" resource-divider-location="300" version="2.7.1" locale="en_GB">
     <description/>
-    <view zooming-state="default:6" id="gantt-chart">
-        <field id="tpd3" name="Name" width="50" order="0"/>
-        <field id="tpd4" name="Begin date" width="25" order="1"/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Name" width="67" order="0"/>
+        <field id="tpd4" name="Begin date" width="7" order="1"/>
         <field id="tpd5" name="End date" width="24" order="2"/>
         <option id="color.recent"><![CDATA[#660066 #00ff33 #f4f4f4 #ffff66 #00cccc #cc0000 #ff0000 #ff6666 #0000ff #33ff33]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="50" order="0"/>
-        <field id="1" name="Default role" width="49" order="1"/>
+        <field id="1" name="Default role" width="50" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -60,17 +60,17 @@
                 <depend id="28" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="43" name="Task 2 - Requirements" color="#000000" meeting="false" start="2015-11-03" duration="35" complete="2" expand="true">
+        <task id="43" name="Task 2 - Requirements" color="#000000" meeting="false" start="2015-11-03" duration="35" complete="4" expand="true">
             <task id="45" name="Read the rules of the game" color="#00cccc" meeting="false" start="2015-11-03" duration="1" complete="100" expand="true">
-                <depend id="47" type="2" difference="0" hardness="Strong"/>
+                <depend id="47" type="2" difference="-1" hardness="Strong"/>
             </task>
-            <task id="47" name="Create Requirements" color="#00cccc" meeting="false" start="2015-11-04" duration="4" complete="11" expand="true">
+            <task id="47" name="Create Requirements" color="#00cccc" meeting="false" start="2015-11-03" duration="1" complete="100" expand="true">
                 <depend id="53" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="53" name="Proofread" color="#00cccc" meeting="false" start="2015-11-08" duration="1" complete="0" expand="true">
+            <task id="53" name="Proofread" color="#00cccc" meeting="false" start="2015-11-04" duration="1" complete="100" expand="true">
                 <depend id="58" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="58" name="Requirements Completed" color="#00cccc" meeting="true" start="2015-11-09" duration="0" complete="0" expand="true">
+            <task id="58" name="Requirements Completed" color="#00cccc" meeting="true" start="2015-11-05" duration="0" complete="0" expand="true">
                 <depend id="78" type="2" difference="0" hardness="Strong"/>
                 <depend id="80" type="2" difference="0" hardness="Strong"/>
             </task>
@@ -84,17 +84,17 @@
                 <depend id="28" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="79" name="Task 3 - Design" meeting="false" start="2015-11-09" duration="27" complete="0" expand="true">
-            <task id="80" name="Plan rough class diagram" color="#ffff66" meeting="false" start="2015-11-09" duration="2" complete="0" expand="true">
+        <task id="79" name="Task 3 - Design" meeting="false" start="2015-11-05" duration="31" complete="0" expand="true">
+            <task id="80" name="Plan rough class diagram" color="#ffff66" meeting="false" start="2015-11-05" duration="2" complete="0" expand="true">
                 <depend id="81" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="81" name="Create class diagram" color="#ffff66" meeting="false" start="2015-11-11" duration="2" complete="0" expand="true">
+            <task id="81" name="Create class diagram" color="#ffff66" meeting="false" start="2015-11-07" duration="2" complete="0" expand="true">
                 <depend id="82" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="82" name="Proofread" color="#ffff66" meeting="false" start="2015-11-13" duration="2" complete="0" expand="true">
+            <task id="82" name="Proofread" color="#ffff66" meeting="false" start="2015-11-09" duration="2" complete="0" expand="true">
                 <depend id="86" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="86" name="Diagram complete" color="#ffff66" meeting="true" start="2015-11-15" duration="0" complete="0" expand="true">
+            <task id="86" name="Diagram complete" color="#ffff66" meeting="true" start="2015-11-11" duration="0" complete="0" expand="true">
                 <depend id="85" type="2" difference="0" hardness="Strong"/>
                 <depend id="108" type="2" difference="0" hardness="Strong"/>
             </task>
@@ -132,20 +132,20 @@
                 <depend id="28" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="89" name="Task 5 - Implementation" meeting="false" start="2015-11-15" duration="23" complete="0" expand="true">
-            <task id="108" name="Setup project including class creation" color="#00ff33" meeting="false" start="2015-11-15" duration="4" complete="0" expand="true">
+        <task id="89" name="Task 5 - Implementation" meeting="false" start="2015-11-11" duration="27" complete="0" expand="true">
+            <task id="108" name="Setup project including class creation" color="#00ff33" meeting="false" start="2015-11-11" duration="4" complete="0" expand="true">
                 <depend id="109" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="109" name="Add save/load function" color="#00ff33" meeting="false" start="2015-11-19" duration="3" complete="0" expand="true">
+            <task id="109" name="Add save/load function" color="#00ff33" meeting="false" start="2015-11-15" duration="3" complete="0" expand="true">
                 <depend id="110" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="110" name="Add cucumber functionality" color="#00ff33" meeting="false" start="2015-11-22" duration="4" complete="0" expand="true">
+            <task id="110" name="Add cucumber functionality" color="#00ff33" meeting="false" start="2015-11-18" duration="4" complete="0" expand="true">
                 <depend id="111" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="111" name="Create and implement tests" color="#00ff33" meeting="false" start="2015-11-26" duration="3" complete="0" expand="true">
+            <task id="111" name="Create and implement tests" color="#00ff33" meeting="false" start="2015-11-22" duration="3" complete="0" expand="true">
                 <depend id="120" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="120" name="Implementation complete" color="#00ff33" meeting="true" start="2015-11-29" duration="0" complete="0" expand="true">
+            <task id="120" name="Implementation complete" color="#00ff33" meeting="true" start="2015-11-25" duration="0" complete="0" expand="true">
                 <depend id="121" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="116" name="Upload Versions to GitHub" color="#00ff33" meeting="false" start="2015-11-15" duration="23" complete="0" expand="true">
@@ -251,8 +251,8 @@
     <taskdisplaycolumns>
         <displaycolumn property-id="tpd2" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd6" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="241" visible="true"/>
-        <displaycolumn property-id="tpd4" order="1" width="121" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="325" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="37" visible="true"/>
         <displaycolumn property-id="tpd7" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd12" order="-1" width="75" visible="false"/>
