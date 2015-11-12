@@ -1,3 +1,6 @@
+*.txt~
+*.md~
+
 .gradle
 build/
 
