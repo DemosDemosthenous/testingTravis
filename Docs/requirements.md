@@ -14,7 +14,8 @@
 
 # 2. Buying Property
 
-2.1 [Must] A player can buy a property that their piece is on, if that property is not already owned by another player. 
+2.1 [Must] A player can buy a property that their piece is on, if that property is not already owned by another player.
+
 2.2 [Must] A player must have enough money to buy the property.
 
 2.3 [Must] Each property must have a unique name
