@@ -1,5 +1,1 @@
-# CO2012 Group repository
-
-This is where your group will be complete lab and worksheet exercises
-
-Feel free to edit this file for notes etc for your group 
+[![Build Status](https://magnum.travis-ci.com/UOL-CS/co2012-group-19-repo.svg?token=uyB9Bpm5822jKuR9BvZE&branch=master)](https://magnum.travis-ci.com/UOL-CS/co2012-group-19-repo)
