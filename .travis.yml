@@ -2,4 +2,4 @@ language: java
 jdk:
 - oraclejdk7
 script:
-./gradlew check -i
+- ./gradlew -i check
