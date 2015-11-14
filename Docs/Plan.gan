@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Plan" company="" webLink="http://" view-date="2015-11-02" view-index="0" gantt-divider-location="503" resource-divider-location="300" version="2.7.1" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Plan" company="" webLink="http://" view-date="2015-10-26" view-index="0" gantt-divider-location="503" resource-divider-location="300" version="2.7.1" locale="en_GB">
     <description/>
     <view zooming-state="default:6" id="gantt-chart">
         <field id="tpd3" name="Name" width="70" order="0"/>
@@ -97,7 +97,7 @@
             <task id="86" name="Diagram complete" color="#ffff66" meeting="true" start="2015-11-11" duration="0" complete="0" expand="true">
                 <depend id="85" type="2" difference="0" hardness="Strong"/>
                 <depend id="108" type="2" difference="0" hardness="Strong"/>
-                <depend id="180" type="2" difference="10" hardness="Strong"/>
+                <depend id="180" type="2" difference="3" hardness="Strong"/>
             </task>
             <task id="83" name="Upload Versions to GitHub" color="#ffff66" meeting="false" start="2015-11-11" duration="25" complete="0" expand="true">
                 <depend id="85" type="2" difference="0" hardness="Strong"/>
@@ -138,18 +138,19 @@
         </task>
         <task id="89" name="Task 5 - Implementation" color="#000000" meeting="false" start="2015-11-11" duration="27" complete="4" expand="true">
             <task id="108" name="Setup project" color="#00ff33" meeting="false" start="2015-11-11" duration="4" complete="77" expand="true">
+                <depend id="180" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="180" name="Create Classes" color="#00ff33" meeting="false" start="2015-11-15" duration="6" complete="0" expand="true">
                 <depend id="109" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="109" name="Add save/load function" color="#00ff33" meeting="false" start="2015-11-15" duration="3" complete="0" expand="true">
-                <depend id="110" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="110" name="Add cucumber functionality" color="#00ff33" meeting="false" start="2015-11-18" duration="4" complete="0" expand="true">
-                <depend id="111" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="180" name="Create Classes" color="#00ff33" meeting="false" start="2015-11-21" duration="10" complete="0" expand="true">
                 <depend id="120" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="111" name="Create and implement tests" color="#00ff33" meeting="false" start="2015-11-22" duration="3" complete="0" expand="true">
+            <task id="109" name="Add save/load function" color="#00ff33" meeting="false" start="2015-11-21" duration="3" complete="0" expand="true">
+                <depend id="110" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="110" name="Add cucumber functionality" color="#00ff33" meeting="false" start="2015-11-24" duration="4" complete="0" expand="true">
+                <depend id="111" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="111" name="Create and implement tests" color="#00ff33" meeting="false" start="2015-11-28" duration="3" complete="0" expand="true">
                 <depend id="120" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="120" name="Implementation complete" color="#00ff33" meeting="true" start="2015-12-01" duration="0" complete="0" expand="true">
