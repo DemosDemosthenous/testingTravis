@@ -1,6 +1,6 @@
 *.txt~
 *.md~
-
+Ds_store.*
 .gradle
 build/
 
