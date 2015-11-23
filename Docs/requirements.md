@@ -54,8 +54,6 @@
 
 5.2 [Must] If a player is in jail they cannot earn rent.
 
-5.3 [Could] The amount owed to the player increases with the number of houses and hotels on that property
-
 # 6 Saving
 
 6.1 [Must] The saved game must be given a name
