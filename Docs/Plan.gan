@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Plan" company="" webLink="http://" view-date="2015-11-02" view-index="0" gantt-divider-location="489" resource-divider-location="300" version="2.7.1" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Plan" company="" webLink="http://" view-date="2015-10-31" view-index="0" gantt-divider-location="489" resource-divider-location="300" version="2.7.1" locale="en_GB">
     <description/>
     <view zooming-state="default:3" id="gantt-chart">
         <field id="tpd3" name="Name" width="63" order="0"/>
@@ -7,8 +7,8 @@
         <option id="color.recent"><![CDATA[#00ff33 #f4f4f4 #ff6666 #660066 #ffff66 #00cccc #cc0000 #ff0000 #0000ff #33ff33]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="93" order="0"/>
-        <field id="1" name="Default role" width="6" order="1"/>
+        <field id="0" name="Name" width="63" order="0"/>
+        <field id="1" name="Default role" width="36" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -34,7 +34,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Task 1 - Planning and Monitoring" color="#000000" meeting="false" start="2015-11-02" duration="36" complete="70" expand="true">
+        <task id="0" name="Task 1 - Planning and Monitoring" color="#000000" meeting="false" start="2015-11-02" duration="36" complete="61" expand="true">
             <task id="2" name="Ask Commit hours from people" color="#8cb6ce" meeting="false" start="2015-11-02" duration="1" complete="100" expand="true">
                 <depend id="3" type="2" difference="0" hardness="Strong"/>
             </task>
@@ -49,18 +49,18 @@
             <task id="5" name="Gant Chart first draft Completed" color="#8cb6ce" meeting="true" start="2015-11-08" duration="0" complete="0" expand="true">
                 <depend id="9" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="6" name="Maintain Gantt Chart" color="#8cb6ce" meeting="false" start="2015-11-07" duration="31" complete="67" expand="true"/>
-            <task id="7" name="Upload Versions to GitHub" color="#8cb6ce" meeting="false" start="2015-11-03" duration="35" complete="72" expand="true">
+            <task id="6" name="Maintain Gantt Chart" color="#8cb6ce" meeting="false" start="2015-11-07" duration="31" complete="57" expand="true"/>
+            <task id="7" name="Upload Versions to GitHub" color="#8cb6ce" meeting="false" start="2015-11-03" duration="35" complete="62" expand="true">
                 <depend id="9" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="8" name="Checking by the rest of the group" color="#8cb6ce" meeting="false" start="2015-11-04" duration="34" complete="70" expand="true">
+            <task id="8" name="Checking by the rest of the group" color="#8cb6ce" meeting="false" start="2015-11-04" duration="34" complete="61" expand="true">
                 <depend id="9" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="9" name="Task Complete" color="#8cb6ce" meeting="true" start="2015-12-08" duration="0" complete="0" expand="true">
                 <depend id="28" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="43" name="Task 2 - Requirements" color="#000000" meeting="false" start="2015-11-03" duration="35" complete="67" expand="false">
+        <task id="43" name="Task 2 - Requirements" color="#000000" meeting="false" start="2015-11-03" duration="35" complete="60" expand="true">
             <task id="45" name="Read the rules of the game" color="#00cccc" meeting="false" start="2015-11-03" duration="1" complete="100" expand="true">
                 <depend id="47" type="2" difference="-1" hardness="Strong"/>
             </task>
@@ -74,24 +74,24 @@
                 <depend id="78" type="2" difference="0" hardness="Strong"/>
                 <depend id="80" type="2" difference="11" hardness="Strong"/>
             </task>
-            <task id="62" name="Upload Versions to GitHub" color="#00cccc" meeting="false" start="2015-11-03" duration="35" complete="69" expand="true">
+            <task id="62" name="Upload Versions to GitHub" color="#00cccc" meeting="false" start="2015-11-03" duration="35" complete="61" expand="true">
                 <depend id="78" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="71" name="Checking by the rest of the group" color="#00cccc" meeting="false" start="2015-11-04" duration="34" complete="68" expand="true">
+            <task id="71" name="Checking by the rest of the group" color="#00cccc" meeting="false" start="2015-11-04" duration="34" complete="61" expand="true">
                 <depend id="78" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="78" name="Task Complete" color="#00cccc" meeting="true" start="2015-12-08" duration="0" complete="0" expand="true">
                 <depend id="28" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="79" name="Task 3 - Design" color="#000000" meeting="false" start="2015-11-11" duration="25" complete="51" expand="true">
+        <task id="79" name="Task 3 - Design" color="#000000" meeting="false" start="2015-11-11" duration="25" complete="53" expand="true">
             <task id="80" name="Plan rough class diagram" color="#ffff66" meeting="false" start="2015-11-16" duration="1" complete="100" expand="true">
                 <depend id="81" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="81" name="Create class diagram" color="#ffff66" meeting="false" start="2015-11-17" duration="2" complete="100" expand="true">
                 <depend id="82" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="82" name="Proofread" color="#ffff66" meeting="false" start="2015-11-19" duration="2" complete="0" expand="true">
+            <task id="82" name="Proofread" color="#ffff66" meeting="false" start="2015-11-19" duration="2" complete="60" expand="true">
                 <depend id="86" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="86" name="Diagram complete" color="#ffff66" meeting="true" start="2015-11-21" duration="0" complete="0" expand="true">
@@ -101,7 +101,7 @@
             <task id="83" name="Upload Versions to GitHub" color="#ffff66" meeting="false" start="2015-11-11" duration="25" complete="54" expand="true">
                 <depend id="85" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="84" name="Checking by rest of the group" color="#ffff66" meeting="false" start="2015-11-12" duration="24" complete="51" expand="true">
+            <task id="84" name="Checking by rest of the group" color="#ffff66" meeting="false" start="2015-11-12" duration="24" complete="52" expand="true">
                 <depend id="85" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="85" name="Task Complete" color="#ffff66" meeting="true" start="2015-12-06" duration="0" complete="0" expand="true">
@@ -136,7 +136,7 @@
                 <depend id="28" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="89" name="Task 5 - Implementation" color="#000000" meeting="false" start="2015-11-12" duration="26" complete="10" expand="true">
+        <task id="89" name="Task 5 - Implementation" color="#000000" meeting="false" start="2015-11-12" duration="26" complete="9" expand="true">
             <task id="108" name="Setup project" color="#00ff33" meeting="false" start="2015-11-12" duration="5" complete="100" expand="true">
                 <depend id="110" type="2" difference="4" hardness="Strong"/>
                 <depend id="255" type="2" difference="0" hardness="Strong"/>
@@ -149,7 +149,7 @@
             <task id="110" name="Add cucumber dependencies" color="#00ff33" meeting="false" start="2015-11-21" duration="1" complete="100" expand="true">
                 <depend id="111" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="255" name="Create gherkin scenarios" color="#00ff33" meeting="false" start="2015-11-17" duration="1" complete="0" expand="true">
+            <task id="255" name="Create gherkin scenarios" color="#00ff33" meeting="false" start="2015-11-17" duration="1" complete="52" expand="true">
                 <depend id="111" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="111" name="Create step definitions" color="#00ff33" meeting="false" start="2015-11-22" duration="3" complete="0" expand="true">
