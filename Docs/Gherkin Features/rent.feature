@@ -1,10 +1,21 @@
 Feature: Rent
 In order to make income
 As a property owner
-I want to be able to charge people to spend their turn on my owned square
+I want to be able to charge people who land on my property
 
 Scenario: landing on a player-owned property square
 
-    Given that I land on a square that contains a property owned by another player
-    Then I must pay the player that owns the square the value of the rent, determined by the number of properties on the square
-        But if I am in jail, I cannot earn rent from my own properties
+    Given player iron owns Bond street
+	And there is a player boot
+	When player boot lands on Bond street
+    Then the player boot's money decreases by Bond street's rent value
+	And the player iron's money increases by the Bond street's rent value
+	
+Scenario: landing on an unowned property
+
+	Given Bond Street is unowned
+	And player car lands on it
+	Then player car's money remain the same
+	
+
+	

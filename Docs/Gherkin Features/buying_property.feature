@@ -2,35 +2,35 @@ Feature: Buying property
 
 In order to increase my properties
 As a player
-I want to be able to buy a property i land on 
+I want to be able to buy a property I land on 
 
 Scenario: buy an available property 
 
-    Given that I land on a property square after my movement
-        And it is not already owned by another player
-        And my money equals or is greater than the property's indicated value
-   When i decide to buy the property 
-   Then my money will decrease by the property value
+    Given that the player lands on a property square 
+        And the property is not already owned by another player
+        And the player's money equals or is greater than the property's indicated value
+   When the player decides to buy the property 
+   Then the player's money will decrease by the property's value
    And the bank balance will increase by the property's value  
-   And the number of my properties increases
+   And the number of the player's properties increases by 1
 
 
 Scenario: not enough money for property
 
-     Given that I land on a property square after my movement
+     Given that the player lands on a property square
         And it is not already owned by another player
-	And my money is less than the property's value   
-     When i decide to buy the property 
+	And the player's money is less than the property's value   
+     When the player decides to buy the property 
      Then the message "You don't have enough money for that property" is displayed
      And owner of the property remains null
 
 Scenario: property owned by another player
 
-	Given that i land on a property square after my movement
+	Given that the player lands on a property square after my movement
 	And the property is owned by another player 
-	When I attempt to buy the property
+	When the player attempts to buy the property
 	Then the message "Property is already owned" is displayed
-	And owner of the property does not change
+	And the owner of the property does not change
 
 	
 

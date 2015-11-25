@@ -1,26 +1,45 @@
 Feature: Jail
 
-In order to manage the jail system
-As players of the game
-I want a fair and reliable system to be put in and escape jail
+In order to follow the rules of the game
+As a developer
+I want to be able to put players in and out of jail
 
 Scenario: Going to jail
 
-    Given it is my turn
-        And I land on a "go to jail" square
-        But I can also move to jail by rolling a third double on my turn
-    Then I must go to the jail square, and miss the rest of my turn
-        And if I pass go, I do not collect £200
-        And I cannot move on my next turn
+    Given the player is on Pall Mall square
+	When the player rolls 6
+	Then the player goes to Jail square
+	And the player is imprisoned
 
-Scenario: Escaping jail
+Scenario: Escaping jail (roll a double)
 
-    Given it is my turn
-    When I roll doubles
-    Then I can escape jail and move on the next turn
-        But if I fail to roll doubles, I miss the turn and can try next turn
-    When I pay £50
-        Then I can leave jail early
-        But if I don't role doubles on three turns, I must pay £50 and be released from jail
+    Given the player is imprisoned
+    When the player rolls 10(5,5)
+    Then the player gets out of jail
+    And the player lands on Free parking square
+
+Scenario: Pay 50 to get out of jail
+
+	Given the player is imprisoned
+	When the player pays 50
+	Then the player gets out of jail
+	And the players money decreases by 50
+	And the bank balance increases by 50
+
+Scenario: Failing to roll doubles 3 times
+
+	Given the player is imprisoned
+	And the player rolls 9(5,4)
+	And the player rolls 4(3,1)
+	When the player rolls 7(3,4)
+	Then the player gets out of jail
+	And the players balance decreases by 50
+	And the money in the bank increase by 50
+	
+Scenario: Not moving when in jail
+
+	Given the player is imprisoned
+	When the player rolls 3(2,1)
+	Then the position of the player remains the same
         
     

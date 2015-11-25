@@ -7,12 +7,10 @@ Feature: Navigating around the board
     Scenario: Rolling a dice at the start of the turn
     
         Given the player is on GO
-	When the player rolls 6
+		When the player rolls 6
         Then the player should land on the angel Islington square
         
-      
-
-
+ 
   Scenario: Landing on Go to jail square
 	Given the player is on Leicester square
 	When the player rolls 4
@@ -40,7 +38,7 @@ Feature: Navigating around the board
 	Given the player is on Free parking square
 	When the player has rolled 3(1,2)	
 	And the player has rolled 4(2,2)
-	Then theplayer lands on Coventry Street
+	Then the player lands on Coventry Street
 
   Scenario: Player in jail rolls double
 	Given the player is in jail 

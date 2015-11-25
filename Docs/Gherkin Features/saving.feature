@@ -1,18 +1,49 @@
-Feature: Saving the game
-In order to allow the game to be played in intervals 
-As a developer
-I want to develop a database-utilizing savegame feature
+Feature: Saving and the game
 
-Scenario: Saving the game
+In order to preserve the state of the game
+As a player
+I want to be able to save my game
+
+Scenario: Saving the board state
 
     Given that the game has started
-    Then I can save the game at any time
-        And the save file must be given a name
-        And the save file is stored in the database
-        
-Scenario: Loading the game
+	And there are 5 players on board
+	When I save the game
+    Then the state of the board should be in the database
+	
+Scenario: Storing Player position
 
-    Given that a save file exists in the database
-    Then I can load the game from the save file
-        And the state of the game at the time of saving will be loaded
-        
+	Given player boot is on Mayfair
+	When I save the game 
+	Then the state of player boot is saved to the database
+	
+Scenario: Storing Player properties
+
+	Given player iron has 3 properties
+	When I save the player iron's state
+	Then the state of the player iron is stored to database
+	
+Feature: Loading the game
+
+In order to continue my game where I left off last time
+As a player
+I want to be able to load my game
+
+Scenario: Loading the board state
+	
+	Given the state of the board is in the database
+	And there are 5 people on board
+	When I load the board state
+	Then the board must have 5 players on it
+		
+Scenario: Loading player position
+
+    Given the state of player boot is save on the database
+    When I load player boot's state from database
+    Then player boot should be positioned on Mayfair
+	
+Scenario: Loading player properties
+
+	Given the state of player iron is on database
+	When when I load player iron's state 
+	Then player iron should own 3 properties
