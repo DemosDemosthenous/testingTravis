@@ -7,6 +7,6 @@ public String name;
 public double money;
 public int position;
 public Token token;
-public List<Property>properties;
+//public List<Property>properties;
 	
 }

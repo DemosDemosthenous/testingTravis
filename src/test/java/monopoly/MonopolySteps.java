@@ -12,7 +12,7 @@ import cucumber.api.java.en.When;
 
 
 public class MonopolySteps {
-	@Before 
+	/*@Before 
 	public void beforeScenario(){
 		Game game = new Game();
 	}
@@ -111,5 +111,5 @@ public void the_car_player_s_money_doesn_t_change() throws Throwable {
 public void the_owner_of_the_property_does_not_change() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
     throw new PendingException();
-}
+}*/
 }
