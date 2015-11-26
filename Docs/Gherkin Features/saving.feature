@@ -1,8 +1,8 @@
-Feature: Saving and the game
+Feature: Saving and loading the game
 
-In order to preserve the state of the game
+In order to pause and continue my game later
 As a player
-I want to be able to save my game
+I want to be able to save and load my game
 
 Scenario: Saving the board state
 
@@ -23,11 +23,6 @@ Scenario: Storing Player properties
 	When I save the player iron's state
 	Then the state of the player iron is stored to database
 	
-Feature: Loading the game
-
-In order to continue my game where I left off last time
-As a player
-I want to be able to load my game
 
 Scenario: Loading the board state
 	

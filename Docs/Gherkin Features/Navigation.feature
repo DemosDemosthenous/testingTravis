@@ -34,10 +34,10 @@ Feature: Navigating around the board
 	And the bank balance increases by 100
 
   
-  Sceanrio: Double roll
+  Scenario: Double roll
 	Given the player is on Free parking square
-	When the player has rolled 3(1,2)	
 	And the player has rolled 4(2,2)
+	When the player has rolled 3(1,2)	
 	Then the player lands on Coventry Street
 
   Scenario: Player in jail rolls double
@@ -48,7 +48,7 @@ Feature: Navigating around the board
   Scenario: Player in jail does not roll a double
 	Given the player is in jail
 	When the player rolls 5 (2,3)
-	The player remains in jail
+	Then player remains in jail
 
 
 	
