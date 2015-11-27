@@ -11,8 +11,10 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
+apply plugin: 'checkstyle'
 
 mainClassName = 'Main'
+
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -38,6 +40,10 @@ task cucumber() {
     }
 }
 
+checkstyle {
+    toolVersion = "6.1.1"
+    configFile = "./config/checkstyle/checkstyle.xml" as File
+}
 // In this section you declare the dependencies for your production and test code
 dependencies {
     // The production code uses the SLF4J logging API at compile time
