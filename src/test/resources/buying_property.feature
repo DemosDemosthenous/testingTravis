@@ -6,14 +6,14 @@ I want to be able to buy a property I land on
 
 Scenario: buy an available property 
 
-   Given there is a player using car
-   And the player lands on Oxford Street
-   And the Oxford Street is not owned
+   Given a player is using the car
+   And the player is on WhiteChapel Road
+   And the WhiteChapel Road is not owned
    And the player's money is 559m
    When the player decides to buy the property 
    Then the player's money will decrease by 550m
    And the bank balance will increase by 550m
-   And Oxford Street is owned by the player using car
+   And WhiteChapel Road is owned by the player using car
 
 
 Scenario: not enough money for property
