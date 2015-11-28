@@ -11,12 +11,7 @@ Scenario: Going to jail
 	Then the player goes to Jail square
 	And the player is imprisoned
 
-Scenario: Escaping jail (roll a double)
 
-    Given the player is imprisoned
-    When the player rolls 10(5,5)
-    Then the player gets out of jail
-    And the player lands on Free parking square
 
 Scenario: Pay 50 to get out of jail
 
@@ -36,10 +31,6 @@ Scenario: Failing to roll doubles 3 times
 	And the players balance decreases by 50
 	And the money in the bank increase by 50
 	
-Scenario: Not moving when in jail
 
-	Given the player is imprisoned
-	When the player rolls 3(2,1)
-	Then the position of the player remains the same
         
     

@@ -21,15 +21,15 @@ Feature: Navigating around the board
 		Given there is a player hat
 		And the player hat is on Mayfair square
 		And the player hat has a balance 200
-		When the player hat has rolled 1 and 1
-		Then the player hat lands on Vine Street square
+		When the player hat has rolled 3 and 2
+		Then the player hat lands on Marylebone Station square
 		And the player hat has a balance of 400
 		
 	Scenario: Player in jail rolls double
 		Given there is a player dog
 		And the player dog is in jail
         When the player dog has rolled 2 and 2	
-		Then get gets out of jail 
+		Then the player dog gets out of jail 
 		And the player dog lands on Northumberland Avenue square
 
 	Scenario: Player in jail does not roll a double
@@ -40,22 +40,27 @@ Feature: Navigating around the board
 		
 	Scenario: Landing on Go to jail square
 	    Given there is a player hat
-	    And the player hat is on Bond Street square
-	    When the player hat has rolled 2 and 2
-	    Then the player hat lands on Go to jail square 
-     	And the player moves to the jail square
+	    And the player hat is on Strand square
+	    When the player hat has rolled 1 and 2 
+        Then the player hat moves to the Jail square
 	    And the player hat is in jail
   
     
-            
-      
-   Scenario: Landing on income tax
-	Given the player is on GO
-	And the player rolls 4 
-	When the player lands on Income tax
-	Then the players money decrease by 100
-	And the bank balance increases by 100  
-        
+    Scenario: Landing on super tax
+    	Given there is a player shoe
+     	And the player shoe is on Oxford Street
+	    And the player shoe has a balance 300
+	    When the player shoe has rolled 1 and 2 
+	    Then the player shoe lands on Super Tax square
+	    And the player shoe has a balance of 100
+	  
+    Scenario: Landing on income tax
+    	Given there is a player shoe
+     	And the player shoe is on GO
+	    And the player shoe has a balance 300
+	    When the player shoe has rolled 1 and 2 
+	    Then the player shoe lands on Income Tax square
+	    And the player shoe has a balance of 200  
         
         
         

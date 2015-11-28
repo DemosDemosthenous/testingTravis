@@ -21,7 +21,7 @@ public class Player {
     }
 
     public void pay(int amount) {
-        money = -amount;
+        money = money - amount;
     }
     
     public int getBalance() {
@@ -30,6 +30,7 @@ public class Player {
     
     public void setInJail(){
     	inJail = true;
+    	position = Game.board.getLocationByName("Jail");
     }
  
     public void getOutOfJail(int die1, int die2){
@@ -38,7 +39,7 @@ public class Player {
     }
     
     public void passGO(){
-    	money = 400;
+    	money = money+200;
     }
     
 }

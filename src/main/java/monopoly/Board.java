@@ -58,18 +58,34 @@ public class Board {
     
     public Square getDestinationSquare(Player player,Square current,int steps){
     	int curIndex = this.squares.indexOf(current);
+    	
     	Square newPosition;
+    	int total = curIndex + steps;
+    	
+    	
     	if(!player.inJail){
-    		int total = curIndex + steps;
-    	    if (total>34){
-    		    newPosition = squares.get(total - curIndex);
-    		    player.passGO();
-    	    }
-    	    else
     	        newPosition = squares.get(total);
-    	    
-        }else
+    	}else
         	newPosition = current;
+    	
+    	//checking if player has passed from go
+    	if (curIndex>Game.board.squares.indexOf(newPosition))
+    		player.passGO();
+    	
+    	//check if on special squares like Tax or GO to jail
+    	switch(newPosition.name){
+    	    case "Income Tax":
+    	    	player.pay(100);
+    	    	break;
+    	    case "Super Tax":
+    	    	player.pay(200);
+    	    	break;
+    	    case "Go to jail":
+    	    	newPosition = Game.board.getLocationByName("Jail");
+    	    	player.setLocation(newPosition);
+    	    	player.setInJail();
+    	    	break;
+    	}
     	return newPosition;
     }
 }
