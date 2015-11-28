@@ -28,18 +28,18 @@ public class Player {
         return money;
     }
     
-    public void setInJail(){
+    public void setInJail() {
     	inJail = true;
     	position = Game.board.getLocationByName("Jail");
     }
  
-    public void getOutOfJail(int die1, int die2){
+    public void getOutOfJail(int die1, int die2) {
     	if (die1 == die2)
     		inJail = false;
     }
     
-    public void passGO(){
-    	money = money+200;
+    public void passGO() {
+    	money = money + 200;
     }
     
 }

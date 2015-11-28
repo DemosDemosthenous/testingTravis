@@ -15,7 +15,7 @@ public class Square {
     }
     
     public void buy(Player buyer) {
-    	if(buyer.getBalance() > this.sellPrice) {
+    	if (buyer.getBalance() > this.sellPrice) {
             this.setOwner(buyer);
             buyer.pay(sellPrice);
     	}

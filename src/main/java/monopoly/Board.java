@@ -46,44 +46,43 @@ public class Board {
         this.addSquare("Mayfair",18000);
     }
 
-    public void addSquare(String name, double value) {
-        Square square = new Square(name,value);
-        this.squares.add(square);
-        this.squaresMap.put(square.name, square);
+    public void addSquare (String name, double value) {
+        Square square = new Square (name,value);
+        this.squares.add (square);
+        this.squaresMap.put (square.name, square);
     }
    
-    public Square getLocationByName(String name) {
-        return squaresMap.get(name);
+    public Square getLocationByName (String name) {
+        return squaresMap.get (name);
     }
     
-    public Square getDestinationSquare(Player player,Square current,int steps){
-    	int curIndex = this.squares.indexOf(current);
-    	
-    	Square newPosition;
-    	int total = curIndex + steps;
-    	
-    	
-    	if(!player.inJail){
-    	        newPosition = squares.get(total);
-    	}else
-        	newPosition = current;
+    public Square getDestinationSquare (Player player,Square current,int steps) {
+        int curIndex = this.squares.indexOf (current);
+
+        Square newPosition;
+        int total = curIndex + steps;
+
+    	if (!player.inJail) {
+            newPosition = squares.get (total);
+        } else
+            newPosition = current;
     	
     	//checking if player has passed from go
-    	if (curIndex>Game.board.squares.indexOf(newPosition))
-    		player.passGO();
+    	if (curIndex > Game.board.squares.indexOf(newPosition))
+    		player.passGO ();
     	
     	//check if on special squares like Tax or GO to jail
-    	switch(newPosition.name){
+    	switch (newPosition.name) {
     	    case "Income Tax":
-    	    	player.pay(100);
+    	    	player.pay (100);
     	    	break;
     	    case "Super Tax":
-    	    	player.pay(200);
+    	    	player.pay (200);
     	    	break;
     	    case "Go to jail":
-    	    	newPosition = Game.board.getLocationByName("Jail");
-    	    	player.setLocation(newPosition);
-    	    	player.setInJail();
+    	    	newPosition = Game.board.getLocationByName ("Jail");
+    	    	player.setLocation (newPosition);
+    	    	player.setInJail ();
     	    	break;
     	}
     	return newPosition;
