@@ -6,25 +6,39 @@ import monopoly.Game.tokens;
 
 public class Player {
     public String name;
-    public double money;
+    public int money;
     public Square position;
     public tokens token;
     public List<Square> properties;
-
+    public boolean inJail = false;
+    
     public Player (tokens token) {
         this.token = token;
     }
     
     public void setLocation(Square location) {
-        position = location;
+    	position = location;
     }
 
-    public void pay(double amount) {
+    public void pay(int amount) {
         money = -amount;
     }
     
-    public double getBalance() {
+    public int getBalance() {
         return money;
     }
+    
+    public void setInJail(){
+    	inJail = true;
+    }
  
+    public void getOutOfJail(int die1, int die2){
+    	if (die1 == die2)
+    		inJail = false;
+    }
+    
+    public void passGO(){
+    	money = 400;
+    }
+    
 }

@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Game {
-    public Board board = new Board();
+    public static Board board = new Board();
     public Die die1;
     public Die die2;
     public Map<tokens,Player> players = new HashMap();
@@ -21,4 +21,6 @@ public class Game {
     public Player getPlayer(Game.tokens token) {
         return players.get(token);
     }
+    
+    
 }

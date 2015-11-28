@@ -13,13 +13,13 @@ import cucumber.api.java.en.When;
 
 public class MonopolySteps {
 
-    Game game;
-    Player car;
+    Game game = new Game();
+    Player player;
     Square prop;
     
     @Before 
     public void beforeScenario() {
-        game = new Game();
+    	
     }
 
     @After
@@ -27,100 +27,217 @@ public class MonopolySteps {
 
     }
 
-
-    @Given("^a player is using the car$")
-    public void a_player_is_using_the_car() throws Throwable {
-        car = new Player(Game.tokens.CAR);
-        game.addPlayer(car);
-    }
-
-    @Given("^the player is on WhiteChapel Road$")
-    public void the_player_is_on_WhiteChapel_Road() throws Throwable {
-        Square location = game.board.getLocationByName("WhiteChapel Road");
-        car.setLocation(location);
+    @Given("^there is a player (.*)$")
+    public void there_is_a_player_car(String name) throws Throwable {
+    	 switch(name){
+    	 case "car":
+    		 player = new Player(Game.tokens.CAR);
+    		 break;
+    	 
+    	 case "dog":
+    		 player = new Player(Game.tokens.DOG);
+    		 break;
+    	 case "hat":
+    		 player = new Player(Game.tokens.HAT);
+    		 break; 
+    	 case "ship":
+    		 player = new Player(Game.tokens.SHIP);
+    		 break;
+    	 case "shoe":
+    		 player = new Player(Game.tokens.SHOE);
+    		 break;
+    	 case "thimble":
+    		 player = new Player(Game.tokens.THIMBLE);
+    		 break;
+    	 }
+    	 
+         game.addPlayer(player);
     }
     
-    @Given("^the WhiteChapel Road is not owned$")
-    public void the_WhiteChapel_Road_is_not_owned() throws Throwable {
-        Square prop = game.board.getLocationByName("WhiteChapel Road");
-        prop.setOwner(null);
+    @Given("^the player (.*) is on (.*)$")
+    public void the_player_is_on_GO(String name, String square) throws Throwable {
+        switch(name){
+      	 case "car":
+      		 player = game.getPlayer(Game.tokens.CAR);
+      		 break;
+      	 
+      	 case "dog":
+      		 player = game.getPlayer(Game.tokens.DOG);
+      		 break;
+      	 case "hat":
+      		 player = game.getPlayer(Game.tokens.HAT);
+      		 break; 
+      	 case "ship":
+      		 player = game.getPlayer(Game.tokens.SHIP);
+      		 break;
+      	 case "shoe":
+      		 player = game.getPlayer(Game.tokens.SHOE);
+      		 break;
+      	 case "thimble":
+      		 player = game.getPlayer(Game.tokens.THIMBLE);
+      		 break;
+      	 }
+    	
+    	 
+         player.setLocation(game.board.getLocationByName(square));
     }
 
-    @Given("^the player's money is (\\d+)m$")
-    public void the_player_s_money_is_m(int money) throws Throwable {
-        car.money = money;
+    @When("^the player (.*) has rolled (\\d+) and (\\d+)$")
+    public void the_player_has_rolled_and(String name,int die1, int die2) throws Throwable {
+        
+        
+        switch(name){
+   	 case "car":
+   		 player = game.getPlayer(Game.tokens.CAR);
+   		 break;
+   	 
+   	 case "dog":
+   		 player = game.getPlayer(Game.tokens.DOG);
+   		 break;
+   	 case "hat":
+   		 player = game.getPlayer(Game.tokens.HAT);
+   		 break; 
+   	 case "ship":
+   		 player = game.getPlayer(Game.tokens.SHIP);
+   		 break;
+   	 case "shoe":
+   		 player = game.getPlayer(Game.tokens.SHOE);
+   		 break;
+   	 case "thimble":
+   		 player = game.getPlayer(Game.tokens.THIMBLE);
+   		 break;
+   	 }
+      
+        player.getOutOfJail(die1, die2);
+        Square locationToMove = game.board.getDestinationSquare(player,player.position,die1 + die2);
+        player.setLocation(locationToMove);
     }
 
-    @When("^the player decides to buy the property$")
-    public void the_player_decides_to_buy_the_property() throws Throwable {
-        prop = game.board.getLocationByName("WhiteChapel Road");
-        prop.buy(car);
+   /* @Then("^the player (.*) lands on (.*) square$")
+    public void the_player_lands_on(String name, String square) throws Throwable {
+    	switch(name){
+     	 case "car":
+     		 player = game.getPlayer(Game.tokens.CAR);
+     		 break;
+     	 
+     	 case "dog":
+     		 player = game.getPlayer(Game.tokens.DOG);
+     		 break;
+     	 case "hat":
+     		 player = game.getPlayer(Game.tokens.HAT);
+     		 break; 
+     	 case "ship":
+     		 player = game.getPlayer(Game.tokens.SHIP);
+     		 break;
+     		 
+     	 case "shoe":
+     		 player = game.getPlayer(Game.tokens.SHOE);
+     		 break;
+     	 case "thimble":
+     		 player = game.getPlayer(Game.tokens.THIMBLE);
+     		 break;
+     	 }
+  		
+    	
+    	 assertEquals(player.position,game.board.getLocationByName(square));
+    }
+    */
+    @Given("^the player (.*) has a balance (\\d+)$")
+    public void the_player_has_a_balance(String name,int bal) throws Throwable {
+    	switch(name){
+	    case "car":
+		    player = game.getPlayer(Game.tokens.CAR);
+		    break;
+	 
+	    case "dog":
+		    player = game.getPlayer(Game.tokens.DOG);
+		    break;
+	    case "hat":
+		    player = game.getPlayer(Game.tokens.HAT);
+		    break; 
+	    case "ship":
+		    player = game.getPlayer(Game.tokens.SHIP);
+		    break;
+		case "shoe":
+		    player = game.getPlayer(Game.tokens.SHOE);
+		    break;
+	    case "thimble":
+		    player = game.getPlayer(Game.tokens.THIMBLE);
+		    break;
+   }
+        player.money = bal;
     }
 
-    @Then("^the player's money equals (\\d+)m$")
-    public void the_player_s_money_equals(int money) throws Throwable {
-        assertEquals(car.getBalance(),money);
-    }
-/*
-@Then("^the bank balance will increase by (\\d+)m$")
-public void the_bank_balance_will_increase_by_m(int arg1) throws Throwa                                                     ble {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-*/ 
-    @Then("^WhiteChapel Road is owned by the player using car$")
-    public void whitechapel_Road_is_owned_by_the_player_using_car() throws Throwable {
-        prop = game.board.getLocationByName("WhiteChapel Road");
-        assertEquals(car,prop.getOwner());
-    }
+   	/*@Then("^the player (.*) has a balance of (.*)$")
+       public void the_player_has_a_balance_of(String name,int bal) throws Throwable {
+   		switch(name){
+    	    case "car":
+    		    player = game.getPlayer(Game.tokens.CAR);
+    		    break;
+    	 
+    	    case "dog":
+    		    player = game.getPlayer(Game.tokens.DOG);
+    		    break;
+    	    case "hat":
+    		    player = game.getPlayer(Game.tokens.HAT);
+    		    break; 
+    	    case "ship":
+    		    player = game.getPlayer(Game.tokens.SHIP);
+    		    break;
+    		case "shoe":
+    		    player = game.getPlayer(Game.tokens.SHOE);
+    		    break;
+    	    case "thimble":
+    		    player = game.getPlayer(Game.tokens.THIMBLE);
+    		    break;
+       }
+           assertEquals(bal,player.money);
+       }*/
 
-/*
-@Given("^there is a player using car$")
-public void there_is_a_player_using_car() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
+   	@Then("^get gets out of jail$")
+   	public void get_gets_out_of_jail() throws Throwable {
+   	   player = game.getPlayer(Game.tokens.DOG);
+   		assertEquals(player.inJail,false);
+   	}
+
+   	@Given("^the player (.*) is in jail$")
+   	public void the_player_ship_is_in_jail(String name) throws Throwable {
+        switch(name){
+      	 case "car":
+      		 player = game.getPlayer(Game.tokens.CAR);
+      		 break;
+      	 
+      	 case "dog":
+      		 player = game.getPlayer(Game.tokens.DOG);
+      		 break;
+      	 case "hat":
+      		 player = game.getPlayer(Game.tokens.HAT);
+      		 break; 
+      	 case "ship":
+      		 player = game.getPlayer(Game.tokens.SHIP);
+      		 break;
+      		 
+      	 case "shoe":
+      		 player = game.getPlayer(Game.tokens.SHOE);
+      		 break;
+      	 case "thimble":
+      		 player = game.getPlayer(Game.tokens.THIMBLE);
+      		 break;
+      	 }
+   		
+   		
+   		player.setInJail();
+   	    player.setLocation(game.board.getLocationByName("Jail"));    
+   	}
+
+   	@Then("^player ship remains in jail$")
+   	public void player_remains_in_jail() throws Throwable {
+   	    player = game.getPlayer(Game.tokens.SHIP);
+   	    assertEquals(player.inJail,true);
+   	    assertEquals(player.position,game.board.getLocationByName("Jail"));
+   	}
+
+   
+    
 }
 
-@Given("^the player lands on Oxford street$")
-public void the_player_lands_on_Oxford_street() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@Then("^the player's money remain (\\d+)m$")
-public void the_player_s_money_remain_m(int arg1) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@Then("^owner of the property remains null$")
-public void owner_of_the_property_remains_null() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@Given("^the property is owned by another player using hat$")
-public void the_property_is_owned_by_another_player_using_hat() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@When("^the player attempts to buy the property$")
-public void the_player_attempts_to_buy_the_property() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@Then("^the car player's money doesn't change$")
-public void the_car_player_s_money_doesn_t_change() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@Then("^the owner of the property does not change$")
-public void the_owner                                                     _of_the_property_does_not_change() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}*/
-
-}

@@ -10,49 +10,66 @@ public class Board {
     Map<String,Square> squaresMap = new HashMap<> ();
 
     public Board () {
-        this.addSquare("GO");
-        this.addSquare("Old Kent Road");
-        this.addSquare("WhiteChapel Road");
-        this.addSquare("Income Tax");
-        this.addSquare("King' cross Station");
-        this.addSquare("The angel Islington");
-        this.addSquare("Euston Road");
-        this.addSquare("Pentoville Road");
-        this.addSquare("Jail");
-        this.addSquare("Pall Mall");
-        this.addSquare("Eleectric Company");
-        this.addSquare("Whitehall");
-        this.addSquare("Northumberland Avenue");
-        this.addSquare("Marylebone Station");
-        this.addSquare("Bow Street");
-        this.addSquare("Marlbourhough Street");
-        this.addSquare("Vine Street");
-        this.addSquare("Free Parking");
-        this.addSquare("Strand");
-        this.addSquare("Fleet Street");
-        this.addSquare("Trafalgar Square");
-        this.addSquare("Fenchurch station");
-        this.addSquare("Leicester Square");
-        this.addSquare("Coventry Street");
-        this.addSquare("Water Works");
-        this.addSquare("Picadilly");
-        this.addSquare("Go to jail");
-        this.addSquare("Regent Street");
-        this.addSquare("Oxford Street");
-        this.addSquare("Bond Street");
-        this.addSquare("Liverpool Street Station");
-        this.addSquare("Park Lane");
-        this.addSquare("Super Tax");
-        this.addSquare("Mayfair");
+        this.addSquare("GO",0);
+        this.addSquare("Vine Street",15);
+        this.addSquare("Coventry Street",57);
+        this.addSquare("Income Tax",100);
+        this.addSquare("Marylebone Station",500);
+        this.addSquare("Leicester Square",68);
+        this.addSquare("Bow Street",71);
+        this.addSquare("WhiteChapel Road",81);
+        this.addSquare("Jail",0);
+        this.addSquare("The Angel Islington",91);
+        this.addSquare("Eleectric Company",12400);
+        this.addSquare("Trafalgar Square",97);
+        this.addSquare("Northumberland Avenue",112);
+        this.addSquare("Fenchurch st Station",700);
+        this.addSquare("M'Borough Street",125);
+        this.addSquare("Fleet Street",148);
+        this.addSquare("Old Kent Road",208);
+        this.addSquare("Free Parking",0);
+        this.addSquare("Whitehall",211);
+        this.addSquare("Pentonville Road",215);
+        this.addSquare("Pall Mall",228);
+        this.addSquare("Kings Cross Station",16000);
+        this.addSquare("Bond Street",217);
+        this.addSquare("Strand",320);
+        this.addSquare("Water Works",8000);
+        this.addSquare("Regent Street",370);
+        this.addSquare("Go to jail",0);
+        this.addSquare("Euston Road",404);
+        this.addSquare("Picadilly",440);
+        this.addSquare("Oxford Street",550);
+        this.addSquare("Liverpool Street Station",15000);
+        this.addSquare("Park Lane",562);
+        this.addSquare("Super Tax",200);
+        this.addSquare("Mayfair",18000);
     }
 
-    public void addSquare(String name) {
-        Square square = new Square(name);
+    public void addSquare(String name, double value) {
+        Square square = new Square(name,value);
         this.squares.add(square);
         this.squaresMap.put(square.name, square);
     }
    
     public Square getLocationByName(String name) {
         return squaresMap.get(name);
+    }
+    
+    public Square getDestinationSquare(Player player,Square current,int steps){
+    	int curIndex = this.squares.indexOf(current);
+    	Square newPosition;
+    	if(!player.inJail){
+    		int total = curIndex + steps;
+    	    if (total>34){
+    		    newPosition = squares.get(total - curIndex);
+    		    player.passGO();
+    	    }
+    	    else
+    	        newPosition = squares.get(total);
+    	    
+        }else
+        	newPosition = current;
+    	return newPosition;
     }
 }

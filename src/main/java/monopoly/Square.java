@@ -4,9 +4,9 @@ public class Square {
     int squareNum;
     String name;
     Player owner;
-    double sellPrice;
+    int sellPrice;
     
-    public Square(String name) {
+    public Square(String name,double value) {
         this.name = name;
     }
     
@@ -15,8 +15,10 @@ public class Square {
     }
     
     public void buy(Player buyer) {
-        this.setOwner(buyer);
-        buyer.pay(sellPrice);
+    	if(buyer.getBalance() > this.sellPrice) {
+            this.setOwner(buyer);
+            buyer.pay(sellPrice);
+    	}
     }
     
     public Player getOwner() {
