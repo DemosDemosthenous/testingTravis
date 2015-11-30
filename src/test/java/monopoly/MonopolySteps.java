@@ -38,6 +38,8 @@ public class MonopolySteps {
        	    case "thimble":
        	        tempPlayer = game.getPlayer(Game.tokens.THIMBLE);
        	        break;
+       	    default:
+       	    	tempPlayer = null;
         }
         return tempPlayer;
     }
@@ -53,7 +55,7 @@ public class MonopolySteps {
     }
 
     @Given("^there is a player (.*)$")
-    public void there_is_a_player_car(String name) throws Throwable {
+    public void there_is_a_player(String name) throws Throwable {
         switch (name) {
             case "car":
                 player = new Player(Game.tokens.CAR);
@@ -105,11 +107,11 @@ public class MonopolySteps {
         player.money = bal;
     }
 
-/*  @Then("^the player (.*) has a balance of (.*)$")
+    @Then("^the player (.*) has a balance of (.*)$")
     public void the_player_has_a_balance_of(String name,int bal) throws Throwable {
 	    player = getPlayer(name);
         assertEquals(bal,player.money);
-    }*/
+    }
 
     @Then("^the player (.*) gets out of jail$")
    	public void get_gets_out_of_jail(String name) throws Throwable {
@@ -130,14 +132,49 @@ public class MonopolySteps {
         assertEquals(player.inJail,true);
         assertEquals(player.position,game.board.getLocationByName("Jail"));
     }
-
-/*  @Then("^the player (.*) moves to the Jail square$")
- 	public void the_player_hat_moves_to_the_jail_square(String name) throws Throwable {
-   	    player = getPlayer(name);
-   	    assertEquals(game.board.getLocationByName("Jail"),player.position);
-   	    assertEquals(true,player.inJail);
-   	}*/
     
+    //BUY PROPERTIES FEATURE
+    
+    @Given("^the player (.*) has landed on (.*) square$")
+    public void the_player_has_landed_on_square(String play, String square) throws Throwable {
+        player = getPlayer(play);
+        player.setLocation(game.board.getLocationByName(square));
+    }
+    
+    @Given("^the property (.*) is owned by another player using (.*)$")
+    public void the_property_is_owned_by_another_player(String property,String owner) throws Throwable {
+        prop = game.board.getLocationByName(property);
+        player = getPlayer(owner);
+        prop.setOwner(player); 
+       
+    }
+
+    @Given("^the (.*) is not owned")
+    public void property_not_owned (String property) throws Throwable {
+        prop = game.board.getLocationByName(property);
+        prop.setOwner(null);
+    }
+    
+    @When("^the player (.*) attempts to buy (.*)$")
+    public void the_player_attempts_to_buy_the_property(String name,String property) throws Throwable {
+        prop = game.board.getLocationByName(property);
+        player = getPlayer(name);
+        prop.buy(player);
+    }
+
+    @Then("^the owner of (.*) is player (.*)$")
+    public void the_owner_is(String property,String owner) throws Throwable {
+        prop = game.board.getLocationByName(property);
+        player = getPlayer(owner);  
+        assertEquals(getPlayer(owner),prop.getOwner());
+    }
+    
+
+    @Then("^the owner of (.*) is null$")
+    public void the_owner_is_null(String property) throws Throwable {
+        prop = game.board.getLocationByName(property);
+        assertEquals(null,prop.getOwner());
+    }
 }
 
  

@@ -46,7 +46,7 @@ public class Board {
         this.addSquare("Mayfair",18000);
     }
 
-    public void addSquare (String name, double value) {
+    public void addSquare (String name, int value) {
         Square square = new Square (name,value);
         this.squares.add (square);
         this.squaresMap.put (square.name, square);
@@ -58,18 +58,23 @@ public class Board {
     
     public Square getDestinationSquare (Player player,Square current,int steps) {
         int curIndex = this.squares.indexOf (current);
-
+        
+        
         Square newPosition;
         int total = curIndex + steps;
 
+        //checking if player passed from go 
+        if (total > 34) {  //34 squares
+            player.passGO (); //increases players money by 200
+            total = total - 34; //34 squares on board
+            newPosition = squares.get(total);
+        	
+        }
+        
     	if (!player.inJail) {
             newPosition = squares.get (total);
         } else
-            newPosition = current;
-    	
-    	//checking if player has passed from go
-    	if (curIndex > Game.board.squares.indexOf(newPosition))
-    		player.passGO ();
+            newPosition = current;  		
     	
     	//check if on special squares like Tax or GO to jail
     	switch (newPosition.name) {
@@ -87,4 +92,5 @@ public class Board {
     	}
     	return newPosition;
     }
+    
 }

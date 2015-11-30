@@ -19,11 +19,11 @@ Feature: Navigating around the board
 
 	Scenario: Passing go
 		Given there is a player hat
-		And the player hat is on Mayfair square
-		And the player hat has a balance 200
+		And the player hat is on Mayfair
+		And the player hat has a balance 300
 		When the player hat has rolled 3 and 2
 		Then the player hat lands on Marylebone Station square
-		And the player hat has a balance of 400
+		And the player hat has a balance of 500
 		
 	Scenario: Player in jail rolls double
 		Given there is a player dog
@@ -40,9 +40,9 @@ Feature: Navigating around the board
 		
 	Scenario: Landing on Go to jail square
 	    Given there is a player hat
-	    And the player hat is on Strand square
+	    And the player hat is on Strand
 	    When the player hat has rolled 1 and 2 
-        Then the player hat moves to the Jail square
+        Then the player hat lands on Jail square
 	    And the player hat is in jail
   
     
