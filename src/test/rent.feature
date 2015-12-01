@@ -1,17 +1,18 @@
 Feature: Rent
+
 In order to make income
 As a property owner
 I want to be able to charge people who land on my property
 
-Scenario: landing on a player-owned property square
+Scenario: Landing on a player-owned property square
 
-    Given player iron owns Bond street
+	Given player iron owns Bond street
 	And there is a player boot
 	When player boot lands on Bond street
-    Then the player boot's money decreases by Bond street's rent value
+	Then the player boot's money decreases by Bond street's rent value
 	And the player iron's money increases by the Bond street's rent value
 	
-Scenario: landing on an unowned property
+Scenario: Landing on an unowned property
 
 	Given Bond Street is unowned
 	And player car lands on it
