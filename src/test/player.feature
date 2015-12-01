@@ -4,11 +4,12 @@ In order to identify myself on board
 As a player
 I want to have a unique token
 
+
 Scenario: Players are less than 2
 	Given the number of players is less than two
 	When the game starts
 	Then the message "You need more players!" is displayed
-	And a new Player is created
+	And a new player is created
 
 
 Scenario: The  number of players is at most 8
