@@ -28,14 +28,14 @@ Scenario: Loading the board state
 	
 	Given the state of the board is in the database
 	And there are 5 people on board
-	When I loaded the board state
+	When I load the board state
 	Then the board must have 5 players on it
 		
 Scenario: Loading player position
 
 	Given the state of player boot is save on the database
 	When I load player boot's state from database
-	Then player boot should be located on Mayfair
+	Then player boot should be positioned on Mayfair
 	
 Scenario: Loading player properties
 

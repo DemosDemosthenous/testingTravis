@@ -19,7 +19,7 @@ Scenario: Pay 50 to get out of jail
 	When the player pays 50
 	Then the player gets out of jail
 	And the players money decreases by 50
-	And the bank balance increases by 50
+	And the bank balance increase by 50
 
 Scenario: Failing to roll doubles 3 times
 
