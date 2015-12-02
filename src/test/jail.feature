@@ -6,7 +6,7 @@ I want to be able to put players in and out of jail
 
 Scenario: Going to jail
 
-	Given the player is on Pall Mall square
+    Given the player is on Pall Mall square
 	When the player rolls 6
 	Then the player goes to Jail square
 	And the player is imprisoned
@@ -19,7 +19,7 @@ Scenario: Pay 50 to get out of jail
 	When the player pays 50
 	Then the player gets out of jail
 	And the players money decreases by 50
-	And the bank balance increase by 50
+	And the bank balance increases by 50
 
 Scenario: Failing to roll doubles 3 times
 
@@ -29,7 +29,7 @@ Scenario: Failing to roll doubles 3 times
 	When the player rolls 7(3,4)
 	Then the player gets out of jail
 	And the players balance decreases by 50
-	And the money in the bank increases by 50
+	And the money in the bank increase by 50
 	
 
         

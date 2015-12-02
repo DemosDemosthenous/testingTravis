@@ -159,7 +159,7 @@ public class MonopolySteps {
     public void the_player_attempts_to_buy_the_property(String name,String property) throws Throwable {
         prop = game.board.getLocationByName(property);
         player = getPlayer(name);
-        prop.buy(player);
+        game.buy(player,prop);
     }
 
     @Then("^the owner of (.*) is player (.*)$")
@@ -175,6 +175,22 @@ public class MonopolySteps {
         prop = game.board.getLocationByName(property);
         assertEquals(null,prop.getOwner());
     }
+    
+    //FEATURE RENT
+    
+    @Given("^player (.*) owns (.*)$")
+    public void player_ship_owns_Bond_street(String name,String property) throws Throwable {
+        player = getPlayer(name);
+        prop = game.board.getLocationByName(property);
+        prop.setOwner(player);
+    }
+    
+    @When("^the player (.*) has landed on (.*)$")
+    public void the_player_shoe_has_landed_on_Bond_Street(String name, String property) throws Throwable {
+    	player = getPlayer(name);
+        player.setLocation(game.board.getLocationByName(property));
+    }
+
 }
 
  
