@@ -15,6 +15,17 @@ apply plugin: 'checkstyle'
 
 mainClassName = 'Main'
 
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    // The production code uses the SLF4J logging API at compile time
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    testCompile 'junit:junit:4.12'
+	testCompile 'info.cukes:cucumber-java:1.2.3'
+    testCompile 'info.cukes:cucumber-junit:1.2.3'
+	runtime 'mysql:mysql-connector-java:5.1.37'
+	
+}
+
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -32,7 +43,7 @@ configurations {
 task cucumber() {
     dependsOn assemble, compileTestJava
     doLast {
-        javaexec {
+        javaexec {			
             main = 'cucumber.api.cli.Main'
             classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
             args = ['--plugin', 'pretty', '--glue', 'monopoly', 'src/test/resources']
@@ -44,11 +55,13 @@ checkstyle {
     toolVersion = "6.1.1"
     configFile = "./config/checkstyle/checkstyle.xml" as File
 }
-// In this section you declare the dependencies for your production and test code
-dependencies {
-    // The production code uses the SLF4J logging API at compile time
-    compile 'org.slf4j:slf4j-api:1.7.12'
-    testCompile 'junit:junit:4.12'
-	 testCompile 'info.cukes:cucumber-java:1.2.3'
-    testCompile 'info.cukes:cucumber-junit:1.2.3'
+
+task createDatabase(type:Exec) {
+ workingDir './'
+commandLine 'mysql','--user=dd169','--host=mysql.mcscw3.le.ac.uk','-p','dd169'
+ 
+ standardInput file('src/db/script.sql').newInputStream()
 }
+
+
+
