@@ -190,6 +190,13 @@ public class MonopolySteps {
     	player = getPlayer(name);
         player.setLocation(game.board.getLocationByName(property));
     }
+    
+    //JAIL FEATURE
+    @When("^the player (.*) pays to get out of jail$")
+    public void the_player_hat_pays_to_get_out_of_jail(String name) throws Throwable {
+        player = getPlayer(name);
+        player.payOutOfJail();
+    }
 
 }
 

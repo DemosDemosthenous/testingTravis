@@ -8,7 +8,7 @@ package monopoly;
  * @author CO2012_Group19
  *
  */
-public class Bank {
+public class Bank { 
 	/**
 	 * balance variable describes the initial balance of the bank
 	 */

@@ -49,6 +49,12 @@ public class Player {
     }
     
     /**
+     * Holds how many timme the player hasn't rolled a double in a row. 
+     * It is reset when it reaches 3
+     */
+    public int nOfNonDoubles; 
+    
+    /**
      * Sets the players current location
      * @param location is the location that the player has to move to 
      */
@@ -87,7 +93,7 @@ public class Player {
      * @param die2 number rolled on second die
      */
     public void getOutOfJail(int die1, int die2) {
-    	if (die1 == die2)
+    	if (hasRolledDouble(die1, die2))
     	    inJail = false;
     }
     
@@ -130,4 +136,32 @@ public class Player {
         this.properties.add(property);
     }
     
+    /**
+     * Sets the player out of jail
+     */
+    public void payOutOfJail() {
+    	this.inJail = false;
+    	money -= 50;
+    }
+    
+    /**
+     * Checks whether a playerr has rolled a double
+     * 
+     */
+    public boolean hasRolledDouble(int die1, int die2) {
+    	if (die1 == die2){
+    		nOfNonDoubles = 0;
+    		return true;
+    	}
+    	else{
+    		nOfNonDoubles++;
+    		if (nOfNonDoubles == 3){
+    		    nOfNonDoubles = 0;
+			    if(inJail){
+					payOutOfJail();
+				}
+			}
+    		return false;
+    	} 	
+    }
 }

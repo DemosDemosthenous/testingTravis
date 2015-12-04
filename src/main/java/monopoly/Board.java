@@ -107,7 +107,7 @@ public class Board {
             newPosition = squares.get (total);
         } else
             newPosition = current;  		
-    	
+    		
     	//check if on special squares like Tax or GO to jail
     	switch (newPosition.name) {
     	    case "Income Tax":
