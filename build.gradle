@@ -60,7 +60,7 @@ task createDatabase(type:Exec) {
  workingDir './'
 commandLine 'mysql','--user=dd169','--host=mysql.mcscw3.le.ac.uk','-p','dd169'
  
- standardInput file('src/db/script.sql').newInputStream()
+ standardInput file('src/db/monopoly.sql').newInputStream()
 }
 
 
