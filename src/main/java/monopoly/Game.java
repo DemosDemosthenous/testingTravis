@@ -22,13 +22,14 @@ public class Game {
     public List<Player> playerList = new ArrayList<>();
     
     public MonopolyDAO dao = new MonopolyDAO(System.getProperty("db_host"),System.getProperty("db_port"),
-    		System.getProperty("db_user"),System.getProperty("db_name"),System.getProperty("db_pass"));
+         System.getProperty("db_user"),System.getProperty("db_name"),System.getProperty("db_pass"));
     
     /**
      *Holds the tokens
      */
-    public enum tokens {DOG, SHIP, SHOE,HAT,THIMBLE,CAR};
-    
+    public enum tokens { 
+        DOG, SHIP, SHOE, HAT, THIMBLE, CAR 
+    };
     
     public static Bank bank;
 
@@ -74,8 +75,8 @@ public class Game {
     }
     
     public void saveGame() {
-    	for (int i=0; i<playerList.size();i++){
-    		dao.persistPlayer(playerList.get(i));
-    	}
+        for (int i = 0; i < playerList.size();i++) {
+            dao.persistPlayer(playerList.get(i));
+        }
     }
 }
