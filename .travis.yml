@@ -1,21 +1,29 @@
 language: java
-
 script:
 - ./gradlew -i check
 - ./gradlew jar
 - ./gradlew javadoc
-  
- before_install:
-   - mysql -e "create database IF NOT EXISTS monopoly;" -uroot
+
+before_install:
+  - mysql -e "create database IF NOT EXISTS monopoly;" -uroot
 
 before_script:
-  - ./gradlew createDatabase
+- ./gradlew createDatabase
 
- jdk:
+jdk:
 - oraclejdk7
 
 services:
   - mysql
+
+after_success:
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash
+  travis-scripts/push-test-results.sh
+
+env:
+  global:
+  - secure: gtgtcSkCr00QgfRFxuAb8UMDxlLje1CSRSk5nX8mK6aju8pv0sFBKAi7O7sERlvcN0BorA+A4a7hNCqqLJmyAAvokZ7B9D0vd5AA4czoq3+4TgJRcH49RZMvViV0zHSwKSVhCpIoVIQl4uMxyWn1cFVei4oIWPXVrOUqA60/ixcY+HuaGlcyF8h4VeFSYmQUCsWwxJl6S7ykc1CBdDWmA6gU7w3eA8mm1im7uuAlgi3UKKekh2zCq8PY49mztXMn3XXWDK11Z0TPYbcLsP9OnMzIFLkYpmeQw0YoPLf8Rv08T9qDOw9z/8Gp9hZ206OhFkAXY4/+8q+2YiUNXsx1E3Wktzu7sbCc/W4hZidHPA0K4wxXJvSdywUgyqPvT6gkkhT40/ZX8+R24fUlGYFzmjwa4L05gCbyefPejz9JF79pGmIM4H5KbF6OVa3dlkSwPLgZsHjzTP+jyYxN0vcOy8NvRQTd9yVklV6bfnZKrtmz1as7jdHzh6WVYMTulwoNLV+zunQ6nbn4moac9hDpBFbQjjaxUYNcn7JhM8CpXZ/SdxJsl91uOG6GG2znh/wXgPckXA30bxmBQpemI12z2xgYUkNn9lWyQ++G7W5EKNpdURuIK9IzdDfpBph8ZKDErRpjz4oY1x/ocvSXapTYvyLOUdzR3hEYHvdh+BtQJZw=
+
  
 
   
