@@ -21,8 +21,7 @@ public class Game {
     public Map<tokens,Player> players = new HashMap();
     public List<Player> playerList = new ArrayList<>();
     
-    public MonopolyDAO dao = new MonopolyDAO(System.getProperty("db_host"),System.getProperty("db_port"),
-         System.getProperty("db_user"),System.getProperty("db_name"),System.getProperty("db_pass"));
+    public MonopolyDAO dao = new MonopolyDAO();
     
     /**
      *Holds the tokens
