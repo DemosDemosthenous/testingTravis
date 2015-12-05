@@ -13,7 +13,7 @@ public class MonopolyDAO {
     /**
     * Create the connection to the database.
     */
-     public MonopolyDao() {
+     public MonopolyDAO() {
     try {
       Class.forName("com.mysql.jdbc.Driver" );
       connection = DriverManager.getConnection("jdbc:mysql://" + System.getProperty("db_host") 
