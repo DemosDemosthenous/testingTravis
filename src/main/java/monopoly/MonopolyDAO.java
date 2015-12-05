@@ -13,12 +13,15 @@ public class MonopolyDAO {
     /**
     * Create the connection to the database.
     */
-    public MonopolyDAO(String dbHost, String dbPort, String dbName, String dbUser, String dbPassword) {
-        try {
-	    Class.forName("com.mysql.jdbc.Driver" );
-	    connection = DriverManager.getConnection("jdbc:mysql://" + dbHost 
-                 + ":" + dbPort + "/" + dbName + "?user=" + dbUser + "&password=" +     dbPassword);
-
+     public SnakesAndLaddersDao() {
+    try {
+      Class.forName("com.mysql.jdbc.Driver" );
+      connection = DriverManager.getConnection("jdbc:mysql://" + System.getProperty("db_host") 
+          + ":" + System.getProperty("db_port")  
+          + "/" + System.getProperty("db_name")  
+          + "?user=" + System.getProperty("db_user")  
+          + "&password=" + System.getProperty("db_pass"));
+      
         } catch (Exception e) {
             System.err.println("ERROR: failed to get database connection.");
             e.printStackTrace();
