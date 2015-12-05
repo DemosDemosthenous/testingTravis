@@ -6,18 +6,18 @@ script:
 - ./gradlew javadoc
   
  before_install:
- - mysql -e "create database IF NOT EXISTS monopoly;" -uroot
+   - mysql -e "create database IF NOT EXISTS monopoly;" -uroot
 
 before_script:
-- ./gradlew createDatabase
+  - ./gradlew createDatabase
 
  jdk:
 - oraclejdk7
 
 services:
- - mysql
+  - mysql
  
 after_success:
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash
-- travis-scripts/push-test-results.sh
+  travis-scripts/push-test-results.sh
   
