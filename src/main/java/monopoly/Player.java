@@ -15,6 +15,10 @@ import monopoly.Game.tokens;
 public class Player {
 	
 	/**
+	 * Player's id - Used to save and load the player
+	 */
+	public int id;
+	/**
 	 * Player's name
 	 */
     public String name;
@@ -145,7 +149,7 @@ public class Player {
     }
     
     /**
-     * Checks whether a playerr has rolled a double
+     * Checks whether a player has rolled a double
      * 
      */
     public boolean hasRolledDouble(int die1, int die2) {
@@ -157,10 +161,10 @@ public class Player {
     		nOfNonDoubles++;
     		if (nOfNonDoubles == 3){
     		    nOfNonDoubles = 0;
-			    if(inJail){
-					payOutOfJail();
-				}
+    		    if (inJail)
+    		    	payOutOfJail();
 			}
+    		
     		return false;
     	} 	
     }

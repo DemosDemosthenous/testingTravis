@@ -114,9 +114,9 @@ public class MonopolySteps {
     }
 
     @Then("^the player (.*) gets out of jail$")
-   	public void get_gets_out_of_jail(String name) throws Throwable {
+   	public void gets_out_of_jail(String name) throws Throwable {
         player = getPlayer(name);
-        assertEquals(player.inJail,false);
+        assertEquals(false,player.inJail);
     }
 
     @Given("^the player (.*) is in jail$")
